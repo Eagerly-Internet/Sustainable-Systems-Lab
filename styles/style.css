@@ -1,0 +1,124 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --clr-blue-primary: #1b1ef7;
+  --clr-blue-primary-hover: hsl(239, 93%, 34%);
+  --clr-blue-primary-active: hsl(239, 93%, 14%);
+  --clr-black-primary: #1a1a1a;
+  --clr-white-primary: #ffffff;
+  /* Font-family */
+  --ff-heading-plex-serif: "IBM Plex Serif", serif;
+  --ff-body-inter: "Inter", sans-serif;
+  /* Font-size */
+
+  --fz-h1-mobile: 2rem;
+  --fz-h1-desktop: 2.5rem;
+
+  --fz-h2-mobile: 1.3rem;
+  --fz-h2-desktop: 1.5rem;
+
+  --fz-h3-mobile: 1rem;
+  --fz-h3-desktop: 1rem;
+  /* subheader */
+
+  --fz-subtitle-l-mobile: 1rem;
+  --fz-subtitle-l-desktop: 1.25rem;
+
+  --fz-subtitle-s-mobile: 1rem;
+  --fz-subtitle-s-desktop: 1rem;
+
+  /* body */
+  --fz-body-small: 0.875rem;
+  --fz-body-reg: 1rem;
+
+  /* transitions */
+  --transition-03s: all ease 0.3s;
+}
+
+
+html {
+	font-family: var(--ff-body-inter);
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+/* general styling */
+a {
+  text-decoration: none;
+}
+
+/* typography */
+
+h1 {
+font-size: var(--fz-h1-mobile);
+}
+
+h2 {
+font-size: var(--fz-h2-mobile)
+}
+
+h3 {
+font-size: var(--fz-h3-mobile)
+}
+
+h1, h2, h3 {
+	font-family: var(--ff-heading-plex-serif);
+}
+
+p {
+	line-height: 1.63;
+}
+
+
+/* buttons */
+.btn {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 6.5rem;
+  font-size: var(--fz-body-small);
+  font-weight: 700;
+  font-family: var(--ff-body-inter);
+  transition: var(--transition-03s);
+}
+
+.btn.primary {
+  background: var(--clr-blue-primary);
+  color: var(--clr-white-primary);
+}
+
+.btn.primary:hover {
+  background: var(--clr-blue-primary-hover);
+}
+
+.btn.secondary {
+  border: 2px solid var(--clr-blue-primary);
+  color: var(--clr-blue-primary);
+}
+
+.btn.secondary:hover {
+  background: var(--clr-blue-primary);
+  color: var(--clr-white-primary);
+}
+
+/* Hyperlinks */
+p a {
+  color: var(--clr-blue-primary);
+  border-bottom: var(--clr-blue-primary-hover) 1px solid;
+  transition:var(--transition-03s);
+
+}
+
+
+p a:hover {
+  color: var(--clr-blue-primary-active);
+  border-bottom: var(--clr-blue-primary-hover) 1px solid;
+}
+
