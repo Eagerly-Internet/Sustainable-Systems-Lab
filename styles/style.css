@@ -1,6 +1,8 @@
 /* Reset */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -8,13 +10,15 @@
   --clr-blue-primary: #1b1ef7;
   --clr-blue-primary-hover: hsl(239, 93%, 34%);
   --clr-blue-primary-active: hsl(239, 93%, 14%);
+  --clr-background-primary: #fafafa;
   --clr-black-primary: #1a1a1a;
   --clr-white-primary: #ffffff;
+
   /* Font-family */
   --ff-heading-plex-serif: "IBM Plex Serif", serif;
   --ff-body-inter: "Inter", sans-serif;
-  /* Font-size */
 
+  /* Font-size */
   --fz-h1-mobile: 2rem;
   --fz-h1-desktop: 2.5rem;
 
@@ -35,20 +39,17 @@
   --fz-body-small: 0.875rem;
   --fz-body-reg: 1rem;
 
+  /* Gutters */
+  --gutter-sides: 1rem;
+
   /* transitions */
   --transition-03s: all ease 0.3s;
 }
 
-
 html {
-	font-family: var(--ff-body-inter);
+  font-family: var(--ff-body-inter);
 }
 
-main {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-}
 /* general styling */
 a {
   text-decoration: none;
@@ -57,36 +58,43 @@ a {
 /* typography */
 
 h1 {
-font-size: var(--fz-h1-mobile);
+  font-size: var(--fz-h1-mobile);
 }
 
 h2 {
-font-size: var(--fz-h2-mobile)
+  font-size: var(--fz-h2-mobile);
 }
 
 h3 {
-font-size: var(--fz-h3-mobile)
+  font-size: var(--fz-h3-mobile);
 }
 
-h1, h2, h3 {
-	font-family: var(--ff-heading-plex-serif);
+.subheading {
+  color: var(--clr-blue-primary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-heading-plex-serif);
 }
 
 p {
-	line-height: 1.63;
+  line-height: 1.63;
 }
-
 
 /* buttons */
 .btn {
   display: flex;
   gap: 1rem;
+  align-items: center;
   padding: 1.25rem 1.5rem;
   border-radius: 6.5rem;
   font-size: var(--fz-body-small);
   font-weight: 700;
   font-family: var(--ff-body-inter);
   transition: var(--transition-03s);
+  line-break: anywhere;
 }
 
 .btn.primary {
@@ -94,8 +102,16 @@ p {
   color: var(--clr-white-primary);
 }
 
+.btn.primary path {
+  fill: var(--clr-white-primary);
+}
+
 .btn.primary:hover {
   background: var(--clr-blue-primary-hover);
+}
+
+.btn.primary:active {
+  background: var(--clr-blue-primary-active);
 }
 
 .btn.secondary {
@@ -108,17 +124,226 @@ p {
   color: var(--clr-white-primary);
 }
 
+.btn.secondary:active {
+  background: var(--clr-blue-primary-hover);
+  color: var(--clr-white-primary);
+}
+
+.btn.secondary path {
+  fill: var(--clr-blue-primary);
+}
+
 /* Hyperlinks */
 p a {
   color: var(--clr-blue-primary);
   border-bottom: var(--clr-blue-primary-hover) 1px solid;
-  transition:var(--transition-03s);
-
+  transition: var(--transition-03s);
 }
-
 
 p a:hover {
   color: var(--clr-blue-primary-active);
   border-bottom: var(--clr-blue-primary-hover) 1px solid;
 }
 
+/* body */
+body {
+  padding: 0 var(--gutter-sides);
+  background: linear-gradient(
+      299.02deg,
+      rgba(27, 30, 247, 0.08) 17.84%,
+      rgba(27, 30, 247, 0) 70.98%
+    ),
+    var(--clr-background-primary);
+}
+/* header */
+header {
+  height: 112px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header svg {
+  /* fix this color */
+  background: hsla(239, 93%, 54%, 0.102);
+  border-radius: 6.5rem;
+}
+
+header svg {
+}
+
+header img,
+header svg {
+  height: 56px;
+  width: auto;
+}
+
+header img {
+  border-radius: 1rem;
+}
+
+/* main */
+main {
+  display: grid;
+  gap: 2.5rem;
+}
+
+/* hero section */
+
+.hero {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero .hero__img {
+  /* margin-bottom: 2rem; */
+  width: min(100%, auto);
+  height: auto;
+}
+
+.hero .hero__img-caption {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 1rem;
+}
+
+.hero .hero__text {
+  margin-bottom: 1.5rem;
+}
+
+.hero .hero__content-container {
+  /* display: grid;
+   gap: 1rem; */
+}
+
+.hero .hero__link-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+/* Socials container */
+.socials-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+.socials-container .socials-container__item {
+  display: grid;
+  place-items: center;
+  border: 2px var(--clr-blue-primary) solid;
+  padding: 0.8rem;
+  border-radius: 7rem;
+  aspect-ratio: 1/1;
+  height: fit-content;
+  transition: var(--transition-03s);
+}
+
+.socials-container .socials-container__item path {
+  fill: var(--clr-blue-primary);
+}
+
+.socials-container__item:hover {
+  fill: var(--clr-white-primary);
+  background: var(--clr-blue-primary);
+}
+
+.socials-container__item:active {
+  background: var(--clr-blue-primary-hover);
+  border: var(--clr-blue-primary-hover) 2px solid;
+}
+
+.socials-container__item:hover path,
+.socials-container__item:active path {
+  fill: var(--clr-white-primary);
+}
+
+/*  media qeuries */
+
+/* @mixin for-tablet-p-up  */
+@media (min-width: 600px) {
+  /* hero section */
+  .hero .hero__link-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  /* buttons */
+  .btn {
+    width: fit-content;
+  }
+}
+
+/* @mixin for-tablet-l-up */
+@media (min-width: 900px) {
+  /* general */
+  body {
+    display: grid;
+    /* grid-template-columns: 1fr min(100%, calc(1130px - var(--gutter-sides) * 2)) 1fr; */
+    grid-template-columns: 1fr min(100%, 1130px) 1fr;
+  }
+
+  body > * {
+    grid-column: 2/2;
+  }
+
+  /* hero section */
+  .hero {
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    gap: 3.5rem;
+  }
+}
+
+/*
+Based on "The 100% correct way to do CSS breakpoints"
+https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+*/
+
+/* @mixin for-phone-only  */
+/* @media (max-width: math.div(599px, 16px) * 1em) {
+  @content;
+} */
+
+/* @mixin for-tablet-p-up  */
+/* @media (min-width: math.div(600px, 16px) * 1em) {
+  @content;
+}
+
+/* @mixin for-tablet-p-only  */
+/* @media (min-width: 900px) {
+  @content;
+} */
+
+/* @mixin until-tablet-l  */
+/* @media (max-width: math.div(899px, 16px) * 1em) {
+  @content;
+} */
+
+/* @mixin for-tablet-l-up  */
+/* @media (min-width: math.div(900px, 16px) * 1em) {
+  @content;
+} */
+
+/* @mixin for-tablet-l-only  */
+/* @media (max-width: math.div(1199px, 16px) * 1em) and (min-width: math.div(900px, 16px) * 1em) {
+  @content;
+} */
+
+/* @mixin for-desktop-up  */
+/* @media (min-width: math.div(1200px, 16px) * 1em) {
+  @content;
+} */
+
+/* @mixin for-desktop-only  */
+/* @media (max-width: math.div(1799px, 16px) * 1em) and (min-width: math.div(1200px, 16px) * 1em) {
+  @content;
+} */
+
+/* @mixin for-big-desktop-up  */
+/* @media (min-width: math.div(1800px, 16px) * 1em) {
+  @content;
+} */
