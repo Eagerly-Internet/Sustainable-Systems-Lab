@@ -197,7 +197,6 @@ main {
 }
 
 .hero .hero__img {
-  /* margin-bottom: 2rem; */
   width: min(100%, auto);
   height: auto;
 }
@@ -210,11 +209,6 @@ main {
 
 .hero .hero__text {
   margin-bottom: 1.5rem;
-}
-
-.hero .hero__content-container {
-  /* display: grid;
-   gap: 1rem; */
 }
 
 .hero .hero__link-container {
@@ -282,7 +276,6 @@ main {
   /* general */
   body {
     display: grid;
-    /* grid-template-columns: 1fr min(100%, calc(1130px - var(--gutter-sides) * 2)) 1fr; */
     grid-template-columns: 1fr min(100%, 1130px) 1fr;
   }
 
@@ -296,7 +289,32 @@ main {
     grid-template-columns: auto 1fr;
     gap: 3.5rem;
   }
+
+  /* intro section */
+  section.paper{
+	padding: 5rem 7.18rem 5.62rem 7.18rem;
+  }
 }
+
+/* intro section */
+
+/* paper section */
+.paper {
+	border-radius: 1.5rem;
+	padding: 1.5rem;
+	background: #fff;
+}
+
+.paper p+p{
+margin-top: 20px;
+}
+
+.paper {
+
+}
+
+
+
 
 /*
 Based on "The 100% correct way to do CSS breakpoints"
@@ -347,3 +365,4 @@ https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5
 /* @media (min-width: math.div(1800px, 16px) * 1em) {
   @content;
 } */
+
