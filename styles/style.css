@@ -187,6 +187,7 @@ header img {
 main {
   display: grid;
   gap: 2.5rem;
+  padding-bottom:2.5rem;
 }
 
 /* hero section */
@@ -255,6 +256,87 @@ main {
   fill: var(--clr-white-primary);
 }
 
+
+/* intro section */
+
+/* paper section */
+.paper {
+	border-radius: 1.5rem;
+	padding: 1.5rem;
+	background: #fff;
+}
+
+.paper p+p{
+margin-top: 20px;
+}
+
+/* dicovery section */
+
+.discovery {
+	display: grid;
+	gap: 1.25rem;
+}
+
+.discovery .discovery__link {
+	position: relative;
+	padding:6.62rem 2.5rem;
+	background: #000;
+	border-radius: 40px;
+	color: var(--clr-white-primary);
+	border-radius: 40px;
+	width: 100%;
+	font-family: var(--ff-heading-plex-serif);
+}
+
+.discovery .discovery__link--gr-blue {
+	background: linear-gradient(290.91deg, rgba(0, 0, 0, 0.3) 8.1%, rgba(0, 0, 0, 0) 74.74%), var(--clr-blue-primary);
+}
+
+.discovery .discovery__link--black {
+	background: linear-gradient(290.91deg, rgba(0, 0, 0, 0.6) 8.1%, rgba(255, 255, 255, 0) 74.74%), #1A1A1A;
+}
+
+.discovery .discovery__title {
+	font-weight: 700;
+	font-size: var(--fz-h1-mobile);
+	display: flex;
+	flex-direction: column;
+}
+
+.discovery .discovery__img {
+    display: grid;
+    place-items: center;
+    border: 2px var(--clr-white-primary) solid;
+    padding: 0.8rem;
+    border-radius: 7rem;
+    aspect-ratio: 1/1;
+    transition: var(--transition-03s);
+	 position: absolute;
+	 bottom: 1rem;
+	 right: 1rem;
+	 overflow: hidden;
+	 height: 3rem;
+}
+
+.discovery path {
+fill: var(--clr-white-primary);
+}
+
+/* footer */
+/* footer {
+	display:grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	padding: 2.5rem;
+}
+
+footer a {
+	color: var(--clr-black-primary);
+
+} */
+
+
+
 /*  media qeuries */
 
 /* @mixin for-tablet-p-up  */
@@ -294,24 +376,13 @@ main {
   section.paper{
 	padding: 5rem 7.18rem 5.62rem 7.18rem;
   }
+
+  /* discorvery section */
+.discovery {
+	grid-template: 1fr / 1fr 1fr;
+}
 }
 
-/* intro section */
-
-/* paper section */
-.paper {
-	border-radius: 1.5rem;
-	padding: 1.5rem;
-	background: #fff;
-}
-
-.paper p+p{
-margin-top: 20px;
-}
-
-.paper {
-
-}
 
 
 
