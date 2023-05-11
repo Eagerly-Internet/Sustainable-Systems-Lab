@@ -421,8 +421,7 @@ main {
 footer {
   display: grid;
   gap: 1.5rem;
-  align-items: center;
-  padding: 2.5rem;
+  padding: 2.5rem 0;
 }
 
 footer a {
@@ -474,6 +473,10 @@ footer a {
 
   body > * {
     grid-column: 2/2;
+  }
+
+  nobr {
+	word-break: break-all;
   }
 
   /* navigation desktop*/
