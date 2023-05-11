@@ -77,7 +77,6 @@ h1,
 h2,
 h3 {
   font-family: var(--ff-heading-plex-serif);
-
 }
 
 p {
@@ -191,8 +190,8 @@ header img {
 
 /* navigation */
 .navigation-desk {
-display: none;
-  }
+  display: none;
+}
 
 /* main */
 main {
@@ -344,82 +343,77 @@ main {
 }
 
 /* discovery small */
-.discovery.small .discovery__title{
-	font-size: var(--fz-h1-desktop);
+.discovery.small .discovery__title {
+  font-size: var(--fz-h1-desktop);
 }
 
 .discovery.small .discovery__link {
-padding: 2.5rem 4rem 2.5rem 1.5rem;
+  padding: 2.5rem 4rem 2.5rem 1.5rem;
 }
 
 /* end index/home */
 
 /* publications page*/
-
 /* publications-intro section */
 
 .publications-intro {
-display: grid;
-gap: 2rem;
+  display: grid;
+  gap: 2rem;
 }
 
 .publications-intro__text-container {
-	display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
-	gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
 }
-
-
 
 /* publications overview section*/
 
 .publications-overview {
-	display: grid;
-	gap: 2rem;
+  display: grid;
+  gap: 2rem;
 }
-
 
 .publication-article {
-	display:grid;
-	gap:1.5rem;
-	border-radius: 2rem;
-  	padding: 1.5rem;
-  	background: #fff;
-	word-break: strict;
+  display: grid;
+  gap: 1.5rem;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  background: #fff;
+  word-break: strict;
 }
 
-.publication-article  .publication-article__proc {
-	order: -1;
+.publication-article .publication-article__proc {
+  order: -1;
+  color: var(--clr-blue-primary);
 }
 
-
-.publication-article	.publication-article__text-container {
-	display: grid;
-	gap: 0.5rem;
+.publication-article .publication-article__text-container {
+  display: grid;
+  gap: 0.5rem;
 }
 
-
-.publication-article .publication-article__link-list{
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem;
-	list-style-type: none;
+.publication-article .publication-article__link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style-type: none;
 }
-
 
 .publication-article .publication-article__list-link {
-	color: var(--clr-blue-primary);
-  	border-bottom: var(--clr-blue-primary) 1px solid;
+  color: var(--clr-blue-primary);
+  border-bottom: var(--clr-blue-primary) 1px solid;
 }
 
 .publication-article .publication-article__list-link:hover {
-	color: var(--clr-blue-primary-hover);
-  	border-bottom: var(--clr-blue-primary-hover) 1px solid;
+  color: var(--clr-blue-primary-hover);
+  border-bottom: var(--clr-blue-primary-hover) 1px solid;
 }
-.publication-article {}
+.publication-article {
+}
 
-					/* <ul class="publication-article__link-list">
+/* <ul class="publication-article__link-list">
 						<li class="publication-article__list-item">Media coverage:</li>
 						<li class="publication-article__list-item"><a href="" class="publication-article__list-link"></a>Gizmodo, </li> */
 
@@ -438,20 +432,16 @@ footer a {
 
 /* components */
 .btn-container {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
 }
-
-
 
 /*  media qeuries */
 
 /* @mixin for-tablet-p-up  */
 @media (min-width: 600px) {
-
-
   /* hero section */
   .hero .hero__link-container {
     flex-wrap: wrap;
@@ -459,9 +449,8 @@ footer a {
   }
 
   .btn-container {
-	flex-direction: row;
-
-}
+    flex-direction: row;
+  }
 
   /* buttons */
   .btn {
@@ -470,8 +459,8 @@ footer a {
 
   /* discovery small */
   .discovery.small .discovery__link {
-	width: fit-content;
-	min-width: 350px;
+    width: fit-content;
+    min-width: 350px;
   }
 }
 
@@ -492,22 +481,20 @@ footer a {
     display: grid;
     place-items: center;
     justify-content: center;
-	 position: relative;
+    position: relative;
   }
 
   .img-placeholder {
-	position: absolute;
-	left: 0;
+    position: absolute;
+    left: 0;
   }
 
   .navigation-mobile__burger-menu {
-	display: none;
+    display: none;
   }
 
-
-
-.navigation-desk {
-display: block;
+  .navigation-desk {
+    display: block;
   }
 
   .navigation-desk .navigation-desk__list {
@@ -525,7 +512,7 @@ display: block;
     color: #000;
     font-weight: 700;
     font-size: var(--fz-body-small);
-	 transition: var(--transition-03s);
+    transition: var(--transition-03s);
   }
 
   .navigation-desk .navigation-desk__item-link.active {
@@ -533,7 +520,12 @@ display: block;
   }
 
   .navigation-desk .navigation-desk__item-link:hover {
-	background: rgba(27, 30, 247, 0.1);
+    background: rgba(27, 30, 247, 0.1);
+  }
+
+  /* main */
+  main {
+	padding-top: 1.5rem;
   }
 
   /* hero section */
@@ -556,10 +548,7 @@ display: block;
   /* publications-intro section */
   .publications-intro {
     grid-template-columns: auto 1fr;
-
-
-
-
+  }
 
   footer {
     grid-template-columns: 1fr auto;
