@@ -183,11 +183,16 @@ header img {
   border-radius: 1rem;
 }
 
+/* navigation */
+.navigation-desk {
+display: none;
+  }
+
 /* main */
 main {
   display: grid;
   gap: 2.5rem;
-  padding-bottom:2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 /* hero section */
@@ -256,91 +261,99 @@ main {
   fill: var(--clr-white-primary);
 }
 
-
 /* intro section */
 
 /* paper section */
 .paper {
-	border-radius: 1.5rem;
-	padding: 1.5rem;
-	background: #fff;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  background: #fff;
 }
 
-.paper p+p{
-margin-top: 20px;
+.paper p + p {
+  margin-top: 20px;
 }
 
 /* dicovery section */
 
 .discovery {
-	display: grid;
-	gap: 1.25rem;
+  display: grid;
+  gap: 1.25rem;
 }
 
 .discovery .discovery__link {
-	position: relative;
-	padding:6.62rem 2.5rem;
-	background: #000;
-	border-radius: 40px;
-	color: var(--clr-white-primary);
-	border-radius: 40px;
-	width: 100%;
-	font-family: var(--ff-heading-plex-serif);
+  position: relative;
+  padding: 6.62rem 2.5rem;
+  background: #000;
+  border-radius: 40px;
+  color: var(--clr-white-primary);
+  border-radius: 40px;
+  width: 100%;
+  font-family: var(--ff-heading-plex-serif);
 }
 
 .discovery .discovery__link--gr-blue {
-	background: linear-gradient(290.91deg, rgba(0, 0, 0, 0.3) 8.1%, rgba(0, 0, 0, 0) 74.74%), var(--clr-blue-primary);
+  background: linear-gradient(
+      290.91deg,
+      rgba(0, 0, 0, 0.3) 8.1%,
+      rgba(0, 0, 0, 0) 74.74%
+    ),
+    var(--clr-blue-primary);
 }
 
 .discovery .discovery__link--black {
-	background: linear-gradient(290.91deg, rgba(0, 0, 0, 0.6) 8.1%, rgba(255, 255, 255, 0) 74.74%), #1A1A1A;
+  background: linear-gradient(
+      290.91deg,
+      rgba(0, 0, 0, 0.6) 8.1%,
+      rgba(255, 255, 255, 0) 74.74%
+    ),
+    #1a1a1a;
 }
 
 .discovery .discovery__title {
-	font-weight: 700;
-	font-size: var(--fz-h1-mobile);
-	display: flex;
-	flex-direction: column;
+  font-weight: 700;
+  font-size: var(--fz-h1-mobile);
+  display: flex;
+  flex-direction: column;
 }
 
 .discovery .discovery__img {
-    display: grid;
-    place-items: center;
-    border: 2px var(--clr-white-primary) solid;
-    padding: 0.8rem;
-    border-radius: 7rem;
-    aspect-ratio: 1/1;
-    transition: var(--transition-03s);
-	 position: absolute;
-	 bottom: 1rem;
-	 right: 1rem;
-	 overflow: hidden;
-	 height: 3rem;
+  display: grid;
+  place-items: center;
+  border: 2px var(--clr-white-primary) solid;
+  padding: 0.8rem;
+  border-radius: 7rem;
+  aspect-ratio: 1/1;
+  transition: var(--transition-03s);
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  overflow: hidden;
+  height: 3rem;
 }
 
 .discovery path {
-fill: var(--clr-white-primary);
+  fill: var(--clr-white-primary);
 }
 
 /* footer */
-/* footer {
-	display:grid;
-	grid-template-columns: 1fr auto;
-	align-items: center;
-	padding: 2.5rem;
+footer {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 2.5rem;
 }
 
 footer a {
-	color: var(--clr-black-primary);
-
-} */
-
-
+  color: var(--clr-black-primary);
+}
 
 /*  media qeuries */
 
 /* @mixin for-tablet-p-up  */
 @media (min-width: 600px) {
+
+
   /* hero section */
   .hero .hero__link-container {
     flex-wrap: wrap;
@@ -365,6 +378,48 @@ footer a {
     grid-column: 2/2;
   }
 
+  /* navigation desktop*/
+  header {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+  }
+
+  .img-placeholder {
+	display: none;
+  }
+
+  .navigation-mobile__burger-menu {
+	display: none;
+  }
+
+
+
+.navigation-desk {
+display: block;
+  }
+
+  .navigation-desk .navigation-desk__list {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .navigation-desk .navigation-desk__item {
+    list-style-type: none;
+  }
+
+  .navigation-desk .navigation-desk__item-link {
+    padding: 0.5rem 1rem;
+    border-radius: 7rem;
+    color: #000;
+    font-weight: 700;
+    font-size: var(--fz-body-small);
+  }
+
+  .navigation-desk .navigation-desk__item-link.active {
+    background: rgba(27, 30, 247, 0.1);
+  }
+
   /* hero section */
   .hero {
     align-items: center;
@@ -373,19 +428,19 @@ footer a {
   }
 
   /* intro section */
-  section.paper{
-	padding: 5rem 7.18rem 5.62rem 7.18rem;
+  section.paper {
+    padding: 5rem 7.18rem 5.62rem 7.18rem;
   }
 
   /* discorvery section */
-.discovery {
-	grid-template: 1fr / 1fr 1fr;
+  .discovery {
+    grid-template: 1fr / 1fr 1fr;
+  }
+
+  footer {
+    grid-template-columns: 1fr auto;
+  }
 }
-}
-
-
-
-
 
 /*
 Based on "The 100% correct way to do CSS breakpoints"
@@ -436,4 +491,3 @@ https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5
 /* @media (min-width: math.div(1800px, 16px) * 1em) {
   @content;
 } */
-
