@@ -360,7 +360,9 @@ gap: 2rem;
 }
 
 .publications-intro__text-container {
-	display: grid;
+	display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
 	gap: 1rem;
 }
 
