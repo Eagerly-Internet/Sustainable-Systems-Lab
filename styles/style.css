@@ -135,6 +135,10 @@ p {
   fill: var(--clr-blue-primary);
 }
 
+.btn.secondary:hover path {
+  fill: var(--clr-white-primary);
+}
+
 /* Hyperlinks */
 p a {
   color: var(--clr-blue-primary);
