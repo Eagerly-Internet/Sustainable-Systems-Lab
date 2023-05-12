@@ -181,6 +181,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 
 header svg {
@@ -353,7 +354,7 @@ main {
   display: grid;
   gap: 1.25rem;
   /* makes it unclickeble */
-  z-index: -1;
+
 }
 
 .discovery .discovery__link {
