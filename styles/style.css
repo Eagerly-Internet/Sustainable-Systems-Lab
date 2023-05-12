@@ -7,7 +7,6 @@
 
 
 
-
 :root {
   /* Colors */
   --clr-blue-primary: #1b1ef7;
@@ -136,7 +135,13 @@ p {
 .btn.secondary:active {
   background: var(--clr-blue-primary-hover);
   color: var(--clr-white-primary);
+  border-color:var(--clr-blue-primary-hover) ;
 }
+
+.btn.secondary:active path {
+  fill: var(--clr-white-primary);
+}
+
 
 .btn.secondary path {
   fill: var(--clr-blue-primary);
@@ -616,6 +621,7 @@ footer a {
 	 height: auto;
 	 z-index: 4;
 	 background: none;
+	 transition: none;
   }
 
   .navigation-desk .navigation-desk__list {
@@ -674,6 +680,7 @@ footer a {
 
   footer {
     grid-template-columns: 1fr auto;
+	 align-items: center;
   }
 }
 /*
