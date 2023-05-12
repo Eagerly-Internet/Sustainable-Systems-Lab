@@ -9,9 +9,11 @@
   </head>
 
   <body>
-    <header>
-      <!-- Notice the display none :)))))) -->
-      <a href="./index.html" class="img-placeholder"><img src="./images/przemyslaw-pawelcszak-s.png" alt="Przemyslaw Pawelcszak"></a href="./index.html">
+        <header>
+
+		<input class="click-me" style="display:none;" id="ham-menu"  type="checkbox">
+		<!-- Notice the display none :)))))) -->
+      <a href="./index.html" class="img-placeholder"></a>
 		<nav class="navigation-desk">
 			<ul class="navigation-desk__list">
 				<li class="navigation-desk__item"><a class="navigation-desk__item-link active" href="./index.html">Home</a></li>
@@ -23,13 +25,34 @@
 				<li class="navigation-desk__item"><a class="navigation-desk__item-link" href="">Service</a></li>
 			</ul>
 		</nav>
-
-      <svg class="navigation-mobile__burger-menu" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 16.5C10 15.6716 10.6716 15 11.5 15H35.5C36.3284 15 37 15.6716 37 16.5C37 17.3284 36.3284 18 35.5 18H11.5C10.6716 18 10 17.3284 10 16.5Z" fill="#1A1A1A"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 24.5C10 23.6716 10.6716 23 11.5 23H35.5C36.3284 23 37 23.6716 37 24.5C37 25.3284 36.3284 26 35.5 26H11.5C10.6716 26 10 25.3284 10 24.5Z" fill="#1A1A1A"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 32.5C10 31.6716 10.6716 31 11.5 31H35.5C36.3284 31 37 31.6716 37 32.5C37 33.3284 36.3284 34 35.5 34H11.5C10.6716 34 10 33.3284 10 32.5Z" fill="#1A1A1A"/>
-       </svg>
-
+      <label for="ham-menu">
+		<svg class="navigation-mobile__burger-menu"
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+				fill-rule="evenodd"
+				clip-rule="evenodd"
+				d="M10 16.5C10 15.6716 10.6716 15 11.5 15H35.5C36.3284 15 37 15.6716 37 16.5C37 17.3284 36.3284 18 35.5 18H11.5C10.6716 18 10 17.3284 10 16.5Z"
+				fill="#1A1A1A"
+        />
+        <path
+				fill-rule="evenodd"
+				clip-rule="evenodd"
+				d="M10 24.5C10 23.6716 10.6716 23 11.5 23H35.5C36.3284 23 37 23.6716 37 24.5C37 25.3284 36.3284 26 35.5 26H11.5C10.6716 26 10 25.3284 10 24.5Z"
+				fill="#1A1A1A"
+        />
+        <path
+				fill-rule="evenodd"
+				clip-rule="evenodd"
+				d="M10 32.5C10 31.6716 10.6716 31 11.5 31H35.5C36.3284 31 37 31.6716 37 32.5C37 33.3284 36.3284 34 35.5 34H11.5C10.6716 34 10 33.3284 10 32.5Z"
+				fill="#1A1A1A"
+        />
+      </svg>
+		</label>
     </header>
     <main>
       <section class="intro-single-column">

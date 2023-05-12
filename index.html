@@ -10,6 +10,8 @@
 
   <body>
     <header>
+
+		<input class="click-me" style="display:none;" id="ham-menu"  type="checkbox">
 		<!-- Notice the display none :)))))) -->
       <a href="./index.html" class="img-placeholder"></a>
 		<nav class="navigation-desk">
@@ -23,7 +25,8 @@
 				<li class="navigation-desk__item"><a class="navigation-desk__item-link" href="">Service</a></li>
 			</ul>
 		</nav>
-      <svg class="navigation-mobile__burger-menu"
+      <label for="ham-menu">
+		<svg class="navigation-mobile__burger-menu"
         width="48"
         height="48"
         viewBox="0 0 48 48"
@@ -49,6 +52,7 @@
 				fill="#1A1A1A"
         />
       </svg>
+		</label>
     </header>
     <main>
       <section class="hero">
@@ -65,17 +69,6 @@
             </p>
           </div>
 
-          <!-- <figure class="hero__img-container">
-          <img
-            class="hero__img"
-            src="./images/przemyslaw-pawelcszak-l.png"
-            alt="Przemyslaw Pawelcszak"
-          />
-          <figcaption class="hero__img-caption">
-          <h1 class="hero__header">Przemysław Pawełczak</h1>
-          <p class="hero__subheading subheading"><i>Associate Professor</i></p>
-			 </figcaption>
-        </figure> -->
           <p class="hero__text">
             I am Przemysław Pawełczak an associate professor within the Embedded
             and Networked Systems Group of TU Delft, The Netherlands, leading
