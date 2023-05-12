@@ -217,7 +217,7 @@ header img {
 	overflow: hidden;
 }
 
-.click-me:checked ~ .navigation-desk {
+.navigation-mobile__btn-interaction:checked ~ .navigation-desk {
  height: calc(100vh - 112px) ;
 display: block;
 }
@@ -623,6 +623,7 @@ footer a {
 	 width: auto;
 	 height: auto;
 	 z-index: 4;
+	 background: none;
   }
 
   .navigation-desk .navigation-desk__list {
@@ -635,7 +636,7 @@ footer a {
     list-style-type: none;
   }
 
-  .click-me:checked ~ .navigation-desk {
+  .navigation-mobile__btn-interaction:checked ~ .navigation-desk {
 	height: auto;
   }
 
