@@ -5,6 +5,9 @@
   padding: 0;
 }
 
+
+
+
 :root {
   /* Colors */
   --clr-blue-primary: #1b1ef7;
@@ -252,12 +255,6 @@ font-weight: 700;
     background: rgba(27, 30, 247, 0.1);
   }
 
-/* <nav class="navigation-desk">
-			<ul class="navigation-desk__list">
-				<li class="navigation-desk__item"><a class="navigation-desk__item-link active" href="./index.html">Home</a></li> */
-
-/*  */
-
 /* main */
 main {
   display: grid;
@@ -375,12 +372,7 @@ main {
 }
 
 .discovery .discovery__link--black {
-  background: linear-gradient(
-      290.91deg,
-      rgba(0, 0, 0, 0.6) 8.1%,
-      rgba(255, 255, 255, 0) 74.74%
-    )
-    var(--clr-black-primary);
+    background: linear-gradient( 310.91deg, rgba(0, 0, 0, 0.6) 8.1%, rgba(255,255,255, 0.1) 42%, rgba(255, 255, 255, 0) 74.74% ) var(--clr-black-primary);
 }
 
 .discovery .discovery__title {
@@ -639,6 +631,8 @@ footer a {
   .navigation-mobile__btn-interaction:checked ~ .navigation-desk {
 	height: auto;
   }
+
+
 
   /* main */
   main {
