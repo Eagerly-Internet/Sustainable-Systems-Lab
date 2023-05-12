@@ -83,6 +83,11 @@ p {
   line-height: 1.63;
 }
 
+/* font-bold */
+.font-bold {
+	font-weight: 700;
+}
+
 /* buttons */
 .btn {
   display: flex;
@@ -427,7 +432,7 @@ gap: 1.5rem;
 .student-card__container {
 	display: flex;
    flex-direction: column;
-   justify-content: center;
+   /* justify-content: center; */
 	gap:1.5rem;
 	border-radius: 1.5rem;
   	padding: 1.5rem;
