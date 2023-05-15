@@ -12,6 +12,8 @@
   --clr-blue-primary-hover: hsl(239, 93%, 34%);
   --clr-blue-primary-active: hsl(239, 93%, 14%);
   --clr-background-primary: #fafafa;
+  --clr-background-primary-dark: #e8e8fe;
+  --clr-background-primary-dark-hover: #d4d4ec;
   --clr-black-primary: #1a1a1a;
   --clr-white-primary: #ffffff;
 
@@ -211,8 +213,13 @@ header img {
 /* navigation */
 
 .navigation-mobile__burger-menu {
-  background: hsla(239, 93%, 54%, 0.102);
+  background: var(--clr-background-primary-dark);
   border-radius: 6.5rem;
+  transition: var(--transition-03s);
+}
+
+.navigation-mobile__burger-menu:hover {
+	background: var(--clr-background-primary-dark-hover);
 }
 
 .navigation {
@@ -555,6 +562,7 @@ footer a {
 
 /* @mixin for-tablet-p-up */
 @media (min-width: 600px) {
+
   /* hero section */
   .hero .hero__link-container {
     flex-wrap: wrap;
@@ -613,6 +621,7 @@ footer a {
 
   .navigation-mobile__burger-menu {
     display: none;
+	 transition: none;
   }
 
   .navigation {

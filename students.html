@@ -10,51 +10,53 @@
 
   <body>
     <header>
-      <a href="./index.html" class="img-placeholder"><img src="./images/przemyslaw-pawelcszak-s.png" alt=""></a>
-		<!-- input needs to be adjecent for the mobile menu to function -->
-		<input class="navigation-mobile__btn-interaction" style="display:none;" id="ham-menu"  type="checkbox">
-		<nav class="navigation">
-			<ul class="navigation__list">
-				<li class="navigation__item"><a class="navigation__item-link" href="./index.html">Home</a></li>
-				<li class="navigation__item"><a class="navigation__item-link" href="./publications.html">Publications</a></li>
-				<li class="navigation__item"><a class="navigation__item-link" href="">Grants</a></li>
-				<li class="navigation__item"><a class="navigation__item-link active" href="./students.html">Students</a></li>
-				<li class="navigation__item"><a class="navigation__item-link" href="">Teaching</a></li>
-				<li class="navigation__item"><a class="navigation__item-link" href="">Career</a></li>
-				<li class="navigation__item"><a class="navigation__item-link" href="">Service</a></li>
-			</ul>
-		</nav>
-      <label for="ham-menu">
+  <!-- Logo -->
+  <a href="./index.html" class="img-placeholder">
+    <img src="./images/przemyslaw-pawelcszak-s.png" alt="">
+  </a>
 
-		<svg class="navigation-mobile__burger-menu"
-        width="48"
-        height="48"
-        viewBox="0 0 48 48"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
-				d="M10 16.5C10 15.6716 10.6716 15 11.5 15H35.5C36.3284 15 37 15.6716 37 16.5C37 17.3284 36.3284 18 35.5 18H11.5C10.6716 18 10 17.3284 10 16.5Z"
-				fill="#1A1A1A"
-        />
-        <path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
-				d="M10 24.5C10 23.6716 10.6716 23 11.5 23H35.5C36.3284 23 37 23.6716 37 24.5C37 25.3284 36.3284 26 35.5 26H11.5C10.6716 26 10 25.3284 10 24.5Z"
-				fill="#1A1A1A"
-        />
-        <path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
-				d="M10 32.5C10 31.6716 10.6716 31 11.5 31H35.5C36.3284 31 37 31.6716 37 32.5C37 33.3284 36.3284 34 35.5 34H11.5C10.6716 34 10 33.3284 10 32.5Z"
-				fill="#1A1A1A"
-        />
+  <!-- Mobile Menu Toggle -->
+  <input class="navigation-mobile__btn-interaction" style="display:none;" id="ham-menu"  type="checkbox">
+
+  <!-- Navigation Menu -->
+  <!-- Don't forget to add the active class to your current page  -->
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item">
+        <a class="navigation__item-link" href="./index.html">Home</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__item-link" href="./publications.html">Publications</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__item-link" href="./grants.html">Grants</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__item-link active" href="./students.html">Students</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__item-link" href="./teaching.html">Teaching</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__item-link" href="./career.html">Career</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__item-link" href="./service.html">Service</a>
+      </li>
+    </ul>
+
+  </nav>
+
+    <!-- Mobile Menu Label -->
+  <label for="ham-menu">
+    <!-- Mobile Menu Icon -->
+    <svg class="navigation-mobile__burger-menu" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10 16.5C10 15.6716 10.6716 15 11.5 15H35.5C36.3284 15 37 15.6716 37 16.5C37 17.3284 36.3284 18 35.5 18H11.5C10.6716 18 10 17.3284 10 16.5Z" fill="#1A1A1A"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10 24.5C10 23.6716 10.6716 23 11.5 23H35.5C36.3284 23 37 23.6716 37 24.5C37 25.3284 36.3284 26 35.5 26H11.5C10.6716 26 10 25.3284 10 24.5Z" fill="#1A1A1A"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10 32.5C10 31.6716 10.6716 31 11.5 31H35.5C36.3284 31 37 31.6716 37 32.5C37 33.3284 36.3284 34 35.5 34H11.5C10.6716 34 10 33.3284 10 32.5Z" fill="#1A1A1A"/>
       </svg>
-		</label>
-
-    </header>
+	</label>
+ </header>
     <main>
       <section class="intro-single-column">
         <h1 class="intro-single-column__title">Students</h1>
@@ -65,7 +67,7 @@
       </section>
       <section class="students-section">
 
-        <h2 class="student-section__title">Current PhD students</h2>
+        <h2 class="fullwidth-section-title">Current PhD students</h2>
 
         <div class="student-card">
           <div class="student-card__container">
@@ -127,7 +129,7 @@
       </section>
 
 		      <section class="students-section">
-        <h2 class="student-section__title">Current PhD students</h2>
+        <h2 class="fullwidth-section-title">Current PhD students</h2>
         <div class="student-card">
           <div class="student-card__container">
             <img class="student-card__img" src="./images/coen-van-leeuwen.png" alt=""/>
