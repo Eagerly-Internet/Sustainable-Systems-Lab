@@ -43,7 +43,7 @@
 
 @font-face {
   font-family: "inter_bold";
-  src: url("inter-bold-webfont.woff") format("woff");
+  src: url("/assets/fonts/inter/inter-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -74,7 +74,7 @@
   --ff-heading-plex-serif-medium-italic: "ibm_plex_serif_medium_italic", serif;
 
   --ff-body-inter: "inter", sans-serif;
-  --ff-body-inter: "inter_bold", sans-serif;
+  --ff-body-inter-bold: "inter_bold", sans-serif;
 
   /* Font-size */
   --fz-h1-mobile: 2rem;
