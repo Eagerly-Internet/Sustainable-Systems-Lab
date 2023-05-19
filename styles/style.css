@@ -1,3 +1,117 @@
+/* test */
+
+.cards-information {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.25rem;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.cards-information__flip-card {
+  background-color: transparent;
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.cards-information__flip-card-inner {
+  position: static;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.cards-information__flip-card:hover .cards-information__flip-card-inner {
+  transform: rotateY(180deg);
+  position: static;
+}
+
+/* Position the front and back side */
+.cards-information__flip-card-front, .cards-information__flip-card-back {
+  position: absolute;
+  padding: 6.62rem 2.5rem;
+  width: 100%;
+  min-height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-information__flip-card-front {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient( 290.91deg, rgba(0, 0, 0, 0.3) 8.1%, rgba(0, 0, 0, 0) 74.74%), var(--clr-blue-primary);
+  color: black;
+  border-radius: 2.5rem;
+  color: #fff;
+  font-family: var(--ff-heading-plex-serif-bold);
+  position: relative;
+}
+
+.cards-information__flip-card-front.cards-information__blue{
+  background: linear-gradient( 290.91deg, rgba(0, 0, 0, 0.3) 8.1%, rgba(0, 0, 0, 0) 74.74%), var(--clr-blue-primary);
+}
+
+.cards-information__flip-card-front.cards-information__black{
+   background: linear-gradient( 310.91deg, rgba(0, 0, 0, 0.6) 8.1%, rgba(255,255,255, 0.1) 42%, rgba(255, 255, 255, 0) 74.74% ) var(--clr-black-primary);
+}
+
+/* Style the back side */
+.cards-information__flip-card-back {
+  color: white;
+  transform: rotateY(180deg) translate(0, -100%);
+  border-radius: 2.5rem;
+  position: absolute;
+  /* test 0.1 */
+   display: flex;
+	gap: 0.5rem;
+   flex-direction: column;
+   justify-content: flex-end;
+  /* test 0.2*/
+	padding: 2.5rem 3rem;
+}
+
+.cards-information__flip-card-back.cards-information__blue{
+  background-color: var(--clr-blue-primary);
+}
+
+.cards-information__flip-card-back.cards-information__black{
+  background-color: var(--clr-black-primary);
+}
+
+.cards-information__title {
+	 font-weight: 700;
+    font-size: var(--fz-h1-mobile);
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-information__img {
+    display: grid;
+    place-items: center;
+    border: 2px var(--clr-white-primary) solid;
+    padding: 0.8rem;
+    border-radius: 7rem;
+    aspect-ratio: 1/1;
+    transition: var(--transition-03s);
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    overflow: hidden;
+    height: 3rem;
+}
+
+.cards-information__img path {
+	fill: var(--clr-white-primary);
+}
+
+
+/* end test */
+
 /* fonts & typefaces */
 
 /* Font: ibm_plex_serif */
@@ -274,7 +388,6 @@ header img {
 /* navigation mobile */
 .navigation {
   display: none;
-  /* background: tomato; */
   background: var(--clr-background-primary);
   position: absolute;
   bottom: 0;
@@ -285,23 +398,6 @@ header img {
   transition: var(--transition-03s);
   padding: 1rem;
   overflow: hidden;
-}
-
-.navigation-mobile__btn-interaction:checked ~ .navigation {
-  height: calc(100vh - 112px);
-  display: block;
-}
-
-.navigation-mobile__btn-interaction:checked ~ .navigation + .ham-menu .ham-menu__bar-one{
-  transform: rotate(45deg) translate(11px, -16px);
-}
-
-.navigation-mobile__btn-interaction:checked ~ .navigation + .ham-menu .ham-menu__bar-two{
-  display: none;
-}
-
-.navigation-mobile__btn-interaction:checked ~ .navigation + .ham-menu .ham-menu__bar-three{
-  transform: rotate(-45deg) translate(-24px, 2px);
 }
 
 .navigation__list {
@@ -331,6 +427,25 @@ header img {
 
 .navigation .navigation__item-link:hover {
   background: rgba(27, 30, 247, 0.1);
+}
+
+/* open menu on mobile */
+.navigation-mobile__btn-interaction:checked ~ .navigation {
+  height: calc(100vh - 112px);
+  display: block;
+}
+
+/* change burger menu to X */
+.navigation-mobile__btn-interaction:checked ~ .navigation + .ham-menu .ham-menu__bar-one{
+  transform: rotate(45deg) translate(11px, -16px);
+}
+
+.navigation-mobile__btn-interaction:checked ~ .navigation + .ham-menu .ham-menu__bar-two{
+  display: none;
+}
+
+.navigation-mobile__btn-interaction:checked ~ .navigation + .ham-menu .ham-menu__bar-three{
+  transform: rotate(-45deg) translate(-24px, 2px);
 }
 
 /* main */
@@ -729,6 +844,11 @@ footer a {
     grid-template: 1fr / 1fr 1fr;
   }
 
+	/* .cards-information  section */
+  .cards-information {
+	grid-template-columns: 1fr 1fr;
+}
+
   /* publications-intro section */
   .publications-intro {
     grid-template-columns: auto 1fr;
@@ -749,3 +869,5 @@ footer a {
     align-items: center;
   }
 }
+
+
