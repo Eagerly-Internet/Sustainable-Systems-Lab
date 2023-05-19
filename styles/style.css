@@ -1,3 +1,43 @@
+/* fonts & typefaces */
+
+/* Font: ibm_plex_serif */
+@font-face {
+    font-family: 'ibm_plex_serif_bold';
+    src: url('/assets/fonts/ibm-plex-serif/ibmplexserif-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ibm_plex_serif_bold_italic';
+    src: url('/assets/fonts/ibm-plex-serif/ibmplexserif-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ibm_plex_serif_medium';
+    src: url('/assets/fonts/ibm-plex-serif/ibmplexserif-medium-webfont.woff') format('woff');
+    font-weight: medium;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ibm_plex_serif_medium_italic';
+    src: url('/assets/fonts/ibm-plex-serif/ibmplexserif-mediumitalic-webfont.woff') format('woff');
+    font-weight: medium;
+    font-style: italic;
+}
+
+/* Font: inter */
+ @font-face {
+    font-family: 'inter';
+    src: url('/assets/fonts/inter/inter-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Reset */
 * {
   box-sizing: border-box;
@@ -18,8 +58,12 @@
   --clr-white-primary: #ffffff;
 
   /* Font-family */
-  --ff-heading-plex-serif: "IBM Plex Serif", serif;
-  --ff-body-inter: "Inter", sans-serif;
+  --ff-heading-plex-serif-bold: "ibm_plex_serif_bold", serif;
+  --ff-heading-plex-serif-bold-italic: "ibm_plex_serif_bold_italic", serif;
+  --ff-heading-plex-serif-medium: "ibm_plex_serif_medium", serif;
+  --ff-heading-plex-serif-medium-italic: "ibm_plex_serif_medium_italic", serif;
+
+  --ff-body-inter: "inter", sans-serif;
 
   /* Font-size */
   --fz-h1-mobile: 2rem;
@@ -80,14 +124,15 @@ h3 {
 
 /* Subheading */
 .subheading {
-  color: var(--clr-blue-primary);
+	font-family: var(--ff-heading-plex-serif-medium-italic);
+	color: var(--clr-blue-primary);
 }
 
 /* Headings (h1, h2, h3) */
 h1,
 h2,
 h3 {
-  font-family: var(--ff-heading-plex-serif);
+  font-family: var(--ff-heading-plex-serif-bold);
 }
 
 /* Paragraph */
@@ -366,7 +411,6 @@ main {
 .discovery {
   display: grid;
   gap: 1.25rem;
-  /* makes it unclickeble */
 }
 
 .discovery .discovery__link {
@@ -377,7 +421,7 @@ main {
   color: var(--clr-white-primary);
   border-radius: 40px;
   width: 100%;
-  font-family: var(--ff-heading-plex-serif);
+  font-family: var(--ff-heading-plex-serif-bold);
 }
 
 .discovery .discovery__link--gr-blue {
@@ -524,7 +568,6 @@ main {
 }
 
 .student-card .student-card__date {
-  font-family: var(--ff-heading-plex-serif);
   color: var(--clr-blue-primary);
   order: -1;
 }
