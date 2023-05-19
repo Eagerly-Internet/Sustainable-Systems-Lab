@@ -292,6 +292,18 @@ header img {
   display: block;
 }
 
+.navigation-mobile__btn-interaction:checked ~ .navigation + .ham-menu .ham-menu__bar-one{
+  transform: rotate(45deg) translate(11px, -16px);
+}
+
+.navigation-mobile__btn-interaction:checked ~ .navigation + .ham-menu .ham-menu__bar-two{
+  display: none;
+}
+
+.navigation-mobile__btn-interaction:checked ~ .navigation + .ham-menu .ham-menu__bar-three{
+  transform: rotate(-45deg) translate(-24px, 2px);
+}
+
 .navigation__list {
   display: flex;
   gap: 2rem;
@@ -676,6 +688,9 @@ footer a {
     z-index: 4;
     background: none;
     transition: none;
+	 /* position: fixed; */
+	 border-radius: 6rem;
+	 padding: 1.5rem 1.5rem;
   }
 
   .navigation .navigation__list {
