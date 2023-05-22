@@ -890,7 +890,7 @@ footer a {
     left: 0;
   }
 
-  .navigation-mobile .navigation-mobile__burger-menu {
+  .navigation-mobile__burger-menu {
     display: none;
     transition: none;
   }
@@ -921,7 +921,7 @@ footer a {
     list-style-type: none;
   }
 
-  .navigation-mobile .navigation-mobile__btn-interaction:checked ~ .navigation {
+  .navigation-mobile__btn-interaction:checked ~ .navigation {
     height: auto;
   }
 
