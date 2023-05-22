@@ -85,13 +85,10 @@
 
   --fz-h3-mobile: 1rem;
   --fz-h3-desktop: 1rem;
-  /* subheader */
+  /* subheaders */
 
-  --fz-subtitle-l-mobile: 1rem;
-  --fz-subtitle-l-desktop: 1.25rem;
-
-  --fz-subtitle-s-mobile: 1rem;
-  --fz-subtitle-s-desktop: 1rem;
+  --fz-subtitle-l: 1.125rem;
+  --fz-subtitle-s: 1rem;
 
   /* body */
   --fz-body-small: 0.875rem;
@@ -371,7 +368,7 @@ main {
   width: min(
     100%,
     auto
-  ); /* Set the width to the minimum between 100% and auto */
+  ); /* Sets the width to the minimum between 100% and auto */
   height: auto; /* Set the height to auto */
 }
 
@@ -507,14 +504,14 @@ main {
 
 /* Discovery Small */
 .discovery.small .discovery__title {
-  font-size: var(--fz-h1-desktop);
+  font-size: var(--fz-h1-mobile);
 }
 
 .discovery.small .discovery__link {
   padding: 2.5rem 4rem 2.5rem 1.5rem;
 }
 
-/* test */
+/* Cards-information */
 
 .cards-information {
   display: grid;
@@ -522,12 +519,12 @@ main {
   gap: 1.25rem;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* The flip card container*/
 .cards-information__flip-card {
   background-color: transparent;
   width: 100%;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
 }
 
 /* This container is needed to position the front and back side */
@@ -814,6 +811,49 @@ footer a {
 
   nobr {
     word-break: break-all;
+  }
+
+  /* Fonts from mobile to desktop */
+
+  /* Heading 1 */
+  h1 {
+    font-size: var(--fz-h1-desktop);
+  }
+
+  /* Heading 2 */
+  h2 {
+    font-size: var(--fz-h2-desktop);
+  }
+
+  /* Heading 3 */
+  h3 {
+    font-size: var(--fz-h3-desktop);
+  }
+
+  /* Hero section */
+  .hero__subheading {
+    font-size: var(--fz-subtitle-l);
+  }
+
+  /* Discovery section */
+  .discovery .discovery__title {
+    font-size: var(--fz-h1-desktop);
+  }
+
+  .discovery.small .discovery__title {
+    font-size: var(--fz-h1-desktop);
+  }
+
+  /* Info cards secstion */
+  .cards-information__title {
+    font-weight: 700;
+    font-size: var(--fz-h1-mobile);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .student-card .student-card__title {
+    font-size: var(--fz-h2-desktop);
   }
 
   /* navigation desktop */
