@@ -134,6 +134,7 @@ h3 {
 .subheading {
   font-family: var(--ff-heading-plex-serif-medium-italic);
   color: var(--clr-blue-primary);
+  font-size: var(--fz-subtitle-s);
 }
 
 /* Headings (h1, h2, h3) */
@@ -241,7 +242,7 @@ body {
 
 /* header */
 header {
-  height: 112px;
+  height: 7rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
