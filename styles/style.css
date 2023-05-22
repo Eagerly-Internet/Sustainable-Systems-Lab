@@ -103,12 +103,11 @@
 
 /* Default styles for HTML elements */
 
-/* HTML element */
-html {
-  font-family: var(--ff-body-inter);
+/* General styling */
+svg {
+	overflow: visible;
 }
 
-/* General styling */
 a {
   text-decoration: none;
 }
@@ -169,6 +168,16 @@ p {
   font-family: var(--ff-body-inter);
   transition: var(--transition-03s);
   line-break: anywhere;
+}
+
+/* buttons with two line of text */
+.btn span {
+  font-family: var(--ff-body-inter);
+  display: contents;
+}
+
+.btn.btn--padding-s {
+	padding: 0.875rem 1.5rem;
 }
 
 /* Primary button */
@@ -238,6 +247,7 @@ body {
       rgba(27, 30, 247, 0) 70.98%
     ),
     var(--clr-background-primary);
+	font-family: var(--ff-body-inter);
 }
 
 /* header */
@@ -331,7 +341,7 @@ header img {
   display: block;
 }
 
-/* change burger menu to X */
+/* change burger menu button to X */
 .navigation-mobile__btn-interaction:checked
   ~ .navigation
   + .ham-menu
@@ -370,7 +380,7 @@ main {
     100%,
     auto
   ); /* Sets the width to the minimum between 100% and auto */
-  height: auto; /* Set the height to auto */
+  height: auto;
 }
 
 .hero .hero__img-caption {
@@ -510,6 +520,10 @@ main {
 
 .discovery.small .discovery__link {
   padding: 2.5rem 4rem 2.5rem 1.5rem;
+}
+
+.discovery.small:hover .discovery__link {
+	background: var(--clr-black-primary);
 }
 
 /* Cards-information */
@@ -770,7 +784,7 @@ footer a {
 
 /* media queries */
 
-/* @mixin for-tablet-p-up */
+/* responsive for-tablet-p-up */
 @media (min-width: 600px) {
   /* hero section */
   .hero .hero__link-container {
@@ -785,6 +799,7 @@ footer a {
   /* buttons */
   .btn {
     width: fit-content;
+    font-family: var(--ff-body-inter-bold);
   }
 
   /* discovery small */
@@ -798,7 +813,7 @@ footer a {
   }
 }
 
-/* @mixin for-tablet-l-up */
+/* responsive for-tablet-l-up */
 @media (min-width: 900px) {
   /* general */
   body {
