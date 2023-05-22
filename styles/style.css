@@ -425,18 +425,18 @@ main {
   fill: var(--clr-blue-primary);
 }
 
-.socials-container__item:hover {
+.socials-container .socials-container__item:hover {
   fill: var(--clr-white-primary);
   background: var(--clr-blue-primary);
 }
 
-.socials-container__item:active {
+.socials-container .socials-container__item:active {
   background: var(--clr-blue-primary-hover);
   border: var(--clr-blue-primary-hover) 2px solid;
 }
 
-.socials-container__item:hover path,
-.socials-container__item:active path {
+.socials-container .socials-container__item:hover path,
+.socials-container .socials-container__item:active path {
   fill: var(--clr-white-primary);
 }
 
@@ -538,7 +538,7 @@ main {
 }
 
 /* The flip card container*/
-.cards-information__flip-card {
+.cards-information .cards-information__flip-card {
   background-color: transparent;
   width: 100%;
   border: 1px solid #f1f1f1;
@@ -546,7 +546,7 @@ main {
 }
 
 /* This container is needed to position the front and back side */
-.cards-information__flip-card-inner {
+.cards-information .cards-information__flip-card-inner {
   position: static;
   width: 100%;
   height: 100%;
@@ -555,14 +555,14 @@ main {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.cards-information__flip-card:hover .cards-information__flip-card-inner {
+.cards-information .cards-information__flip-card:hover .cards-information__flip-card-inner {
   transform: rotateY(180deg);
   position: static;
 }
 
 /* Position the front and back side */
-.cards-information__flip-card-front,
-.cards-information__flip-card-back {
+.cards-information .cards-information__flip-card-front,
+.cards-information .cards-information__flip-card-back {
   position: absolute;
   padding: 6.62rem 2.5rem;
   width: 100%;
@@ -573,7 +573,7 @@ main {
   flex-direction: column;
 }
 
-.cards-information__flip-card-front {
+.cards-information .cards-information__flip-card-front {
   display: flex;
   justify-content: center;
   background: linear-gradient(
@@ -589,7 +589,7 @@ main {
   position: relative;
 }
 
-.cards-information__flip-card-front.cards-information__blue {
+.cards-information .cards-information__flip-card-front.cards-information__blue {
   background: linear-gradient(
       290.91deg,
       rgba(0, 0, 0, 0.3) 8.1%,
@@ -598,7 +598,7 @@ main {
     var(--clr-blue-primary);
 }
 
-.cards-information__flip-card-front.cards-information__black {
+.cards-information .cards-information__flip-card-front.cards-information__black {
   background: linear-gradient(
       310.91deg,
       rgba(0, 0, 0, 0.6) 8.1%,
@@ -609,7 +609,7 @@ main {
 }
 
 /* Style the back side */
-.cards-information__flip-card-back {
+.cards-information .cards-information__flip-card-back {
   color: white;
   transform: rotateY(180deg) translate(0, -100%);
   border-radius: 2.5rem;
@@ -621,22 +621,22 @@ main {
   padding: 2.5rem 3rem;
 }
 
-.cards-information__flip-card-back.cards-information__blue {
+.cards-information .cards-information__flip-card-back.cards-information__blue {
   background-color: var(--clr-blue-primary);
 }
 
-.cards-information__flip-card-back.cards-information__black {
+.cards-information .cards-information__flip-card-back.cards-information__black {
   background-color: var(--clr-black-primary);
 }
 
-.cards-information__title {
+.cards-information .cards-information__title {
   font-weight: 700;
   font-size: var(--fz-h1-mobile);
   display: flex;
   flex-direction: column;
 }
 
-.cards-information__img {
+.cards-information .cards-information__img {
   display: grid;
   place-items: center;
   border: 2px var(--clr-white-primary) solid;
@@ -651,7 +651,7 @@ main {
   height: 3rem;
 }
 
-.cards-information__img path {
+.cards-information .cards-information__img path {
   fill: var(--clr-white-primary);
 }
 
@@ -664,7 +664,7 @@ main {
   gap: 2rem;
 }
 
-.publications-intro__text-container {
+.publications-intro .publications-intro__text-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -727,7 +727,7 @@ main {
   gap: 1.5rem;
 }
 
-.student-card__container {
+.student-card .student-card__container {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -851,7 +851,7 @@ footer a {
   }
 
   /* Hero section */
-  .hero__subheading {
+  .hero .hero__subheading {
     font-size: var(--fz-subtitle-l);
   }
 
@@ -865,7 +865,7 @@ footer a {
   }
 
   /* Info cards secstion */
-  .cards-information__title {
+  .cards-information .cards-information__title {
     font-weight: 700;
     font-size: var(--fz-h1-mobile);
     display: flex;
@@ -890,7 +890,7 @@ footer a {
     left: 0;
   }
 
-  .navigation-mobile__burger-menu {
+  .navigation-mobile .navigation-mobile__burger-menu {
     display: none;
     transition: none;
   }
@@ -921,7 +921,7 @@ footer a {
     list-style-type: none;
   }
 
-  .navigation-mobile__btn-interaction:checked ~ .navigation {
+  .navigation-mobile .navigation-mobile__btn-interaction:checked ~ .navigation {
     height: auto;
   }
 
