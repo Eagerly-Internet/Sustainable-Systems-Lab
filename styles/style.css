@@ -105,7 +105,7 @@
 
 /* General styling */
 svg {
-	overflow: visible;
+  overflow: visible;
 }
 
 a {
@@ -177,7 +177,7 @@ p {
 }
 
 .btn.btn--padding-s {
-	padding: 0.875rem 1.5rem;
+  padding: 0.875rem 1.5rem;
 }
 
 /* Primary button */
@@ -247,7 +247,7 @@ body {
       rgba(27, 30, 247, 0) 70.98%
     ),
     var(--clr-background-primary);
-	font-family: var(--ff-body-inter);
+  font-family: var(--ff-body-inter);
 }
 
 /* header */
@@ -286,13 +286,9 @@ header img {
   background: var(--clr-background-primary-dark-hover);
 }
 
-.navigation {
-  display: none;
-}
-
 /* navigation mobile */
 .navigation {
-  display: none;
+  height: 0;
   background: var(--clr-background-primary);
   position: absolute;
   bottom: 0;
@@ -335,10 +331,17 @@ header img {
   background: rgba(27, 30, 247, 0.1);
 }
 
+.navigation {
+	padding: 0rem 1rem;
+	visibility: hidden;
+}
+
 /* open menu on mobile */
 .navigation-mobile__btn-interaction:checked ~ .navigation {
   height: calc(100vh - 112px);
   display: block;
+  padding: 1rem;
+  visibility: visible;
 }
 
 /* change burger menu button to X */
@@ -523,7 +526,7 @@ main {
 }
 
 .discovery.small:hover .discovery__link {
-	background: var(--clr-black-primary);
+  background: var(--clr-black-primary);
 }
 
 /* Cards-information */
