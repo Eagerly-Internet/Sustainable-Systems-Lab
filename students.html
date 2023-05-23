@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+	    <!-- * * * * * * * * * * * * * * * *
+	  *  Website ontwikkeld door Eagerly  *
+	  *     Telefoon:  030 - 785 3179     *
+	  *     Website:   www.eagerly.nl     *
+	  * * * * * * * * * * * * * * * * * -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,8 +22,8 @@
 
       <!-- Mobile Menu Toggle -->
       <input
-        class="navigation-mobile__btn-interaction"
-        style="display: none"
+        class="navigation-mobile-btn"
+
         id="ham-menu"
         type="checkbox"
       />
@@ -53,13 +58,80 @@
             <a class="navigation__item-link" href="./service.html">Service</a>
           </li>
         </ul>
+		  <!-- Socials inside the mobile menu -->
+        <div class="socials-container">
+          <!-- empty link -->
+          <a class="socials-container__item" href="#"
+            ><svg
+              width="22"
+              height="22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.22 6.003A5.978 5.978 0 0 0 11 4.353c-2.87 0-5.307 1.937-6.176 4.544a6.589 6.589 0 0 0 0 4.212h.004c.873 2.603 3.306 4.539 6.176 4.539 1.481 0 2.753-.38 3.739-1.049v-.002a5.092 5.092 0 0 0 2.199-3.343H11V9.018h10.375c.13.736.19 1.488.19 2.235 0 3.346-1.195 6.175-3.276 8.09l.003.002c-1.823 1.682-4.325 2.656-7.292 2.656-4.16 0-7.963-2.345-9.83-6.059a11.01 11.01 0 0 1 0-9.878A10.998 10.998 0 0 1 11 0a10.572 10.572 0 0 1 7.36 2.861l-3.14 3.141z"
+                fill="#000"
+              />
+            </svg>
+          </a>
+          <!-- empty link -->
+          <a class="socials-container__item" href="#"
+            ><svg
+              width="21"
+              height="17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.606 17c7.923 0 12.257-6.541 12.257-12.212 0-.184-.004-.372-.012-.556A8.731 8.731 0 0 0 21 2.01a8.52 8.52 0 0 1-2.473.675A4.319 4.319 0 0 0 20.422.31a8.68 8.68 0 0 1-2.735 1.041A4.328 4.328 0 0 0 12.51.508a4.305 4.305 0 0 0-1.894 2.013 4.284 4.284 0 0 0-.275 2.745 12.272 12.272 0 0 1-4.917-1.3A12.228 12.228 0 0 1 1.464.784a4.283 4.283 0 0 0 1.333 5.728 4.326 4.326 0 0 1-1.952-.536v.053c0 .992.343 1.953.974 2.72a4.31 4.31 0 0 0 2.483 1.49 4.298 4.298 0 0 1-1.944.073c.275.853.81 1.598 1.532 2.133a4.327 4.327 0 0 0 2.49.85A8.662 8.662 0 0 1 0 15.072 12.256 12.256 0 0 0 6.606 17z"
+                fill="#000"
+              />
+            </svg>
+          </a>
+          <!-- empty link -->
+          <a class="socials-container__item" href="#"
+            ><svg
+              width="20"
+              height="20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.52 0H1.477C.66 0 0 .645 0 1.441v17.114C0 19.352.66 20 1.477 20H18.52c.816 0 1.48-.648 1.48-1.441V1.44C20 .645 19.336 0 18.52 0zM5.934 17.043h-2.97V7.496h2.97v9.547zM4.449 6.195a1.72 1.72 0 1 1-.006-3.439 1.72 1.72 0 0 1 .006 3.44zm12.594 10.848h-2.965v-4.64c0-1.106-.02-2.532-1.543-2.532-1.543 0-1.777 1.207-1.777 2.453v4.719H7.797V7.496h2.844v1.305h.039c.394-.75 1.363-1.543 2.804-1.543 3.004 0 3.559 1.976 3.559 4.547v5.238z"
+                fill="#000"
+              />
+            </svg>
+          </a>
+          <!-- empty link -->
+          <a class="socials-container__item" href="#"
+            ><svg
+              width="23"
+              height="22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11 .458a11.04 11.04 0 0 0-7.125 2.61A10.924 10.924 0 0 0 .146 9.645a10.888 10.888 0 0 0 1.445 7.413 10.99 10.99 0 0 0 5.93 4.715c.547.102.752-.237.752-.525 0-.288-.01-1.123-.014-2.035-3.06.66-3.707-1.292-3.707-1.292-.499-1.267-1.22-1.6-1.22-1.6-.998-.678.074-.666.074-.666 1.106.078 1.687 1.129 1.687 1.129.98 1.672 2.574 1.188 3.2.905.099-.708.385-1.19.7-1.463-2.444-.275-5.013-1.213-5.013-5.404a4.223 4.223 0 0 1 1.133-2.936c-.113-.276-.49-1.388.108-2.898 0 0 .923-.293 3.025 1.121 1.803-.49 3.705-.49 5.508 0 2.1-1.414 3.022-1.121 3.022-1.121.6 1.507.222 2.619.11 2.898a4.214 4.214 0 0 1 1.134 2.94c0 4.2-2.573 5.125-5.022 5.395.394.34.745 1.005.745 2.026 0 1.464-.012 2.64-.012 3.001 0 .292.198.632.756.525a10.99 10.99 0 0 0 5.93-4.716 10.887 10.887 0 0 0 1.444-7.414 10.924 10.924 0 0 0-3.73-6.577A11.04 11.04 0 0 0 11.004.458H11z"
+                fill="#000"
+              />
+              <path
+                d="M7.359 18.31c0 .09-.102.166-.233.167-.131.002-.239-.07-.239-.16 0-.088.102-.164.233-.166.131-.002.239.07.239.16zM8.197 18.171c.016.089-.075.181-.206.203-.131.022-.246-.03-.262-.118-.017-.087.078-.18.205-.204.128-.024.246.03.263.12zM6.459 18.25c-.027.084-.151.122-.275.086-.124-.036-.206-.138-.182-.225.023-.087.15-.126.275-.087.126.04.206.136.182.225zM5.634 17.894c-.06.067-.182.049-.282-.042-.1-.09-.124-.213-.064-.279.06-.065.182-.047.286.042.104.089.124.214.06.28zM5.046 17.285c-.068.048-.183 0-.246-.094a.181.181 0 0 1 0-.26c.067-.046.182 0 .246.092.063.092.065.215 0 .262zM4.612 16.657a.183.183 0 0 1-.226-.05c-.07-.077-.085-.182-.03-.229.054-.047.152-.025.223.05.071.077.088.182.033.23zM4.166 16.163c-.024.054-.111.07-.182.032-.071-.038-.124-.108-.099-.165.026-.056.111-.07.182-.032.071.038.126.11.099.165z"
+                fill="#fff"
+              />
+            </svg>
+          </a>
+        </div>
       </nav>
 
       <!-- Mobile Menu Label -->
       <label for="ham-menu" class="ham-menu">
         <!-- Mobile Menu Icon -->
         <svg
-          class="navigation-mobile__burger-menu"
+          class="navigation-burger-menu"
           width="48"
           height="48"
           viewBox="0 0 48 48"
@@ -96,6 +168,7 @@
         <h1 class="intro-single-column__title">Students</h1>
         <p class="intro-single-column__text">
           The list below summarizes past and current supervised students since I
+			 <!-- empty link -->
           joined <a href="#">TU Delft</a> in 2013.
         </p>
       </section>
@@ -107,7 +180,7 @@
         <div class="student-cards">
 
           <div class="student-cards__container">
-				<div class="student-cards__img test">
+				<div class="student-cards__img">
             <img
               class=""
               src="./images/james-scott-broadhead.png"
@@ -270,32 +343,6 @@
         </div>
       </section>
 
-		<!-- test -->
-		      <section class="students-section">
-        <h2 class="fullwidth-section-title">Current PhD students</h2>
-
-        <div class="student-cards">
-
-          <div class="student-cards__container">
-				<div class="student-cards__img test">
-            <img
-              class=""
-              src="./images/james-scott-broadhead.png"
-              alt=""
-            />
-				</div>
-            <div class="student-cards__text-container">
-              <h3 class="student-cards__title">Jasper de Winkel</h3>
-              <p class="student-cards__text">
-                Cosupervisor: <a href="">Koen Langendoen</a>
-              </p>
-              <p class="student-cards__date subheading"><em>2019 – Now</em></p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
     </main>
     <footer>
       <p>
@@ -306,6 +353,7 @@
         Last update: February 10, 2023, 22:52 Delft Time
       </p>
       <div class="socials-container">
+			<!-- empty link -->
         <a class="socials-container__item" href="#"
           ><svg
             width="22"
@@ -320,6 +368,7 @@
               fill="#000"
             /></svg>
 		  </a>
+		  <!-- empty link -->
         <a class="socials-container__item" href="#"
           ><svg
             width="21"
@@ -332,6 +381,7 @@
               fill="#000"
             /></svg>
 				</a>
+				<!-- empty link -->
         <a class="socials-container__item" href="#"
           ><svg
             width="20"
@@ -344,6 +394,7 @@
               fill="#000"
             /></svg>
 				</a>
+				<!-- empty link -->
         <a class="socials-container__item" href="#"
           ><svg
             width="23"
