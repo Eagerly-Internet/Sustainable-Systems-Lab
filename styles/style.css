@@ -256,10 +256,6 @@ body {
   font-family: var(--ff-body-inter);
 }
 
-a {
-
-}
-
 /* header */
 header {
   height: 7rem;
@@ -270,11 +266,6 @@ header {
   position: relative;
   z-index: 1;
 }
-
-header svg {
-}
-
-
 
 header img {
   border-radius: 1rem;
@@ -644,6 +635,7 @@ main {
   font-size: var(--fz-h1-mobile);
   display: flex;
   flex-direction: column;
+  word-break: break-word;
 }
 
 .cards-information .cards-information__img {
