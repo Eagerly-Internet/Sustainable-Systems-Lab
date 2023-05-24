@@ -296,11 +296,11 @@ header img {
   width: calc(100vw - 1rem);
   margin: 0 calc(0px - var(--gutter-sides));
   height: 0;
-  transition:var(--transition-03s);
+  transition: var(--transition-03s);
   overflow: hidden;
 }
 
-.navigation__list {
+.navigation .navigation__list {
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -308,12 +308,12 @@ header img {
   font-family: var(--ff-body-inter-bold);
 }
 
-.navigation__item {
+.navigation .navigation__item {
   list-style-type: none;
   color: var(--clr-black-primary);
 }
 
-.navigation__item-link {
+.navigation .navigation__item-link {
   padding: 0.5rem 1rem;
   border-radius: 7rem;
   color: var(--clr-black-primary);
@@ -322,18 +322,18 @@ header img {
   transition: var(--transition-03s);
 }
 
-  .navigation .socials-container {
-	position: absolute;
-   bottom: 1.25rem;
-   left: 2rem;
-  }
+.navigation .socials-container {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 2rem;
+}
 
 .navigation .navigation__item-link.active {
-  background: rgba(27, 30, 247, 0.1);
+  background: var(--clr-background-500);
 }
 
 .navigation .navigation__item-link:hover {
-  background: rgba(27, 30, 247, 0.1);
+  background: var(--clr-background-500);
 }
 
 .navigation-mobile-btn:checked {
@@ -442,7 +442,7 @@ main {
 .paper {
   border-radius: 1.5rem;
   padding: 1.5rem;
-  background: #fff;
+  background: var(--clr-white-primary);
 }
 
 .paper p + p {
@@ -459,7 +459,7 @@ main {
 .discovery .discovery__link {
   position: relative;
   padding: 6.62rem 2.5rem;
-  background: #000;
+  background: var(--clr-black-primary);
   border-radius: 40px;
   color: var(--clr-white-primary);
   border-radius: 40px;
@@ -537,7 +537,7 @@ main {
 .cards-information .cards-information__flip-card {
   background-color: transparent;
   width: 100%;
-  border: 1px solid #f1f1f1;
+  border: 1px solid var(--clr-white-primary);
   perspective: 1000px;
 }
 
@@ -580,9 +580,9 @@ main {
       rgba(0, 0, 0, 0) 74.74%
     ),
     var(--clr-blue-400-primary);
-  color: black;
+  color: var(--clr-black-primary);
   border-radius: 2.5rem;
-  color: #fff;
+  color: var(--clr-white-primary);
   font-family: var(--ff-heading-plex-serif-bold);
   position: relative;
 }
@@ -609,7 +609,7 @@ main {
 
 /* Style the back side */
 .cards-information .cards-information__flip-card-back {
-  color: white;
+  color: var(--clr-white-primary);
   transform: rotateY(180deg) translate(0, -100%);
   border-radius: 2.5rem;
   position: absolute;
@@ -683,7 +683,7 @@ main {
   gap: 1.5rem;
   border-radius: 2rem;
   padding: 1.5rem;
-  background: #fff;
+  background: var(--clr-white-primary);
   word-break: strict;
 }
 
@@ -750,7 +750,7 @@ main {
 }
 
 .student-cards .student-cards__img {
-object-fit: cover;
+  object-fit: cover;
 }
 
 .student-cards .student-cards__text-container {
@@ -816,7 +816,7 @@ footer a {
   .discovery.small .discovery__link {
     width: fit-content;
     width: -webkit-fit-content; /* safari */
-    min-width: 350px;
+    min-width: 21.875rem;
   }
 
   .student-cards {
@@ -891,7 +891,7 @@ footer a {
   .img-placeholder {
     position: absolute;
     left: 0;
-	 display: grid;
+    display: grid;
   }
 
   .navigation-burger-menu {
@@ -900,9 +900,9 @@ footer a {
   }
 
   .navigation {
-	 position: fixed;
-	 background: var(--clr-white-primary);
-	 border-radius: 7rem;
+    position: fixed;
+    background: var(--clr-white-primary);
+    border-radius: 7rem;
     display: block;
     bottom: auto;
     transform: none;
@@ -912,6 +912,9 @@ footer a {
     transition: none;
     border-radius: 6rem;
     visibility: visible;
+    left: 50%;
+	 top: 1.5rem;
+    transform: translate(-50%);
   }
 
   .navigation .navigation__list {
@@ -927,11 +930,11 @@ footer a {
 
   .navigation-mobile-btn:checked ~ .navigation {
     height: auto;
-	 padding: 0 1rem;
+    padding: 0 1rem;
   }
 
   .navigation .socials-container {
-	display: none;
+    display: none;
   }
 
   /* Main */
@@ -976,7 +979,7 @@ footer a {
     justify-content: center;
   }
 
-/* Footer */
+  /* Footer */
   footer {
     grid-template-columns: 1fr auto;
     align-items: center;
