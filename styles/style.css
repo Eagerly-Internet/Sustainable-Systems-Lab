@@ -290,9 +290,9 @@ header img {
   padding: 0rem 1rem;
   visibility: hidden;
   background: var(--clr-background-400-primary);
-  position: absolute;
-  bottom: 0;
-  transform: translateY(100%);
+  position: fixed;
+  top: 0;
+  /* transform: translateY(100%); */
   width: calc(100vw - 1rem);
   margin: 0 calc(0px - var(--gutter-sides));
   height: 0;
@@ -306,6 +306,8 @@ header img {
   flex-direction: column;
   font-weight: 700;
   font-family: var(--ff-body-inter-bold);
+  margin-bottom: 3rem;
+
 }
 
 .navigation .navigation__item {
@@ -325,7 +327,9 @@ header img {
 .navigation .socials-container {
   position: absolute;
   bottom: 1.25rem;
-  left: 2rem;
+  left: 1rem;
+  padding-top: 112px;
+  background: var(--clr-background-400-primary);
 }
 
 .navigation .navigation__item-link.active {
@@ -341,16 +345,42 @@ header img {
 }
 
 /* Open menu on mobile */
+
+.img-placeholder {
+  z-index: 2;
+   background: #fafafa;
+   margin: -1rem;
+	margin-top: -2rem;
+}
+
+.img-placeholder img {
+padding: 2rem 1rem 1rem 1rem;
+}
+
+.ham-menu {
+z-index: 2;
+}
+
+.navigation-mobile-btn:checked ~ .img-placeholder {
+  position: fixed;
+}
+
 .navigation-mobile-btn:checked ~ .navigation {
-  height: calc(100vh - 112px);
+  height: calc(100vh);
   display: block;
-  padding: 1rem;
+  padding: 112px 1rem 1rem 1rem;
   visibility: visible;
 }
 
 /* Change burger menu button to X */
 .ham-menu svg > * {
   transition: all ease 0.3s;
+}
+
+.navigation-mobile-btn:checked ~ .navigation + .ham-menu {
+  position: fixed;
+  right: 1rem;
+  z-index: 2;
 }
 
 .navigation-mobile-btn:checked ~ .navigation + .ham-menu .ham-menu__bar-one {
@@ -441,7 +471,7 @@ main {
 /* Paper section */
 .paper {
   border-radius: 1.5rem;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   background: var(--clr-white-primary);
 }
 
@@ -495,7 +525,7 @@ main {
 .discovery .discovery__img {
   display: grid;
   place-items: center;
-  border: 2px var(--clr-white-primary) solid;
+  border: 0px var(--clr-white-primary) solid;
   padding: 0.8rem;
   border-radius: 7rem;
   aspect-ratio: 1/1;
@@ -537,7 +567,6 @@ main {
 .cards-information .cards-information__flip-card {
   background-color: transparent;
   width: 100%;
-  border: 1px solid var(--clr-white-primary);
   perspective: 1000px;
 }
 
@@ -894,6 +923,11 @@ footer a {
     display: grid;
   }
 
+  .navigation-mobile-btn:checked ~ .img-placeholder {
+	position: absolute;
+	left: 0;
+  }
+
   .navigation-burger-menu {
     display: none;
     transition: none;
@@ -913,7 +947,7 @@ footer a {
     border-radius: 6rem;
     visibility: visible;
     left: 50%;
-	 top: 1.5rem;
+    top: 1.5rem;
     transform: translate(-50%);
   }
 
@@ -922,6 +956,7 @@ footer a {
     gap: 1rem;
     flex-direction: row;
     padding: 1.25rem 0rem;
+	 margin-bottom: 0;
   }
 
   .navigation .navigation__item {
