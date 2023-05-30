@@ -307,7 +307,6 @@ header img {
   font-weight: 700;
   font-family: var(--ff-body-inter-bold);
   margin-bottom: 3rem;
-
 }
 
 .navigation .navigation__item {
@@ -348,17 +347,17 @@ header img {
 
 .img-placeholder {
   z-index: 2;
-   background: #fafafa;
-   margin: -1rem;
-	margin-top: -2rem;
+  background: #fafafa;
+  margin: -1rem;
+  margin-top: -2rem;
 }
 
 .img-placeholder img {
-padding: 2rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 1rem 1rem;
 }
 
 .ham-menu {
-z-index: 2;
+  z-index: 2;
 }
 
 .navigation-mobile-btn:checked ~ .img-placeholder {
@@ -497,7 +496,7 @@ main {
   font-family: var(--ff-heading-plex-serif-bold);
 }
 
-.discovery .discovery__link--gr-blue {
+.discovery .discovery__link--blue {
   background: linear-gradient(
       290.91deg,
       rgba(0, 0, 0, 0.3) 8.1%,
@@ -525,7 +524,7 @@ main {
 .discovery .discovery__img {
   display: grid;
   place-items: center;
-  border: 0px var(--clr-white-primary) solid;
+  border: 2px var(--clr-white-primary) solid;
   padding: 0.8rem;
   border-radius: 7rem;
   aspect-ratio: 1/1;
@@ -535,7 +534,6 @@ main {
   right: 1rem;
   overflow: hidden;
   height: 3rem;
-  width: fit-content;
 }
 
 .discovery path {
@@ -551,8 +549,107 @@ main {
   padding: 1.5rem 4rem 1.5rem 1.5rem;
 }
 
-.discovery.small:hover .discovery__link {
-  background: var(--clr-black-primary);
+.discovery:hover a.discovery__link .discovery__img {
+  background: var(--clr-white-primary);
+  border-color: var(--clr-white-primary);
+
+}
+
+.discovery:hover a.discovery__link--blue .discovery__img svg path {
+	fill: var(--clr-blue-400-primary);
+}
+
+.discovery:hover a.discovery__link--black .discovery__img svg path {
+	fill: var(--clr-black-primary);
+}
+
+/* discovery hover animation*/
+.discovery.--open-card-container {
+  width: 10%;
+  transition: all ease 0.2s;
+}
+
+span.discovery__img.--open-card-animation {
+  width: 10%;
+  display: grid;
+  border: none;
+  bottom: 0rem;
+  right: 0rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.discovery .--open-card-container:hover {
+  box-shadow: inset 0px 0px 0px 1px white;
+}
+
+.discovery .--open-card-container:hover .--open-card-animation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  display: grid;
+  justify-items: left;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  box-shadow: inset 0px 0px 0px 1px white;
+}
+
+.discovery .--open-card-container:hover .--open-card-text-container {
+  display: block;
+}
+
+.discovery .--open-card-container:hover svg path {
+  fill: #000;
+}
+
+.discovery
+  .--open-card-container:hover
+  .--open-card-animation
+  .--open-card-svg {
+  background-color: #fff;
+  border: border 2px #000;
+}
+
+span.--open-card-animation svg {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.8rem;
+  display: grid;
+  place-items: center;
+  padding: 1rem 2rem 2rem 1rem;
+  border: 2px solid white;
+  border-radius: 7rem;
+}
+
+.discovery .--open-card-container:hover .--open-card-animation svg {
+  right: 1rem;
+  bottom: 1rem;
+  display: grid;
+  place-items: center;
+  padding: 1rem 2rem 2rem 1rem;
+  background-color: black;
+  border-radius: 7rem;
+  border: 2px solid #000;
+}
+
+.discovery .--open-card-container:hover .--open-card-text-container {
+  color: #000;
+  opacity: 1;
+}
+
+ .discovery .--open-card-text-container {
+  opacity: 0;
+  transition: color ease 0s;
+  color: #fff;
+  padding: 1rem 3rem 1rem 1rem;
+  display: none;
+  bottom: 1rem;
+  top: 1rem;
+  display: grid;
+  flex-direction: column;
 }
 
 /* Cards-information */
@@ -924,8 +1021,8 @@ footer a {
   }
 
   .navigation-mobile-btn:checked ~ .img-placeholder {
-	position: absolute;
-	left: 0;
+    position: absolute;
+    left: 0;
   }
 
   .navigation-burger-menu {
@@ -956,7 +1053,7 @@ footer a {
     gap: 1rem;
     flex-direction: row;
     padding: 1.25rem 0rem;
-	 margin-bottom: 0;
+    margin-bottom: 0;
   }
 
   .navigation .navigation__item {
@@ -1020,3 +1117,7 @@ footer a {
     align-items: center;
   }
 }
+
+/* test */
+
+
