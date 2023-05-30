@@ -553,6 +553,7 @@ main {
   right: 1rem;
   overflow: hidden;
   height: 3rem;
+  width: fit-content;
 }
 
 .discovery path {
@@ -638,6 +639,17 @@ span.--open-card-animation svg {
   background-color: black;
   border-radius: 7rem;
   border: 2px solid #000;
+  /* Test */
+    box-sizing: content-box;
+  width: 21px;
+  height: auto;
+  box-sizing: content-box;
+  width: 21px;
+  height: auto;
+  padding: 0.8rem;
+  aspect-ratio: 1/1;
+  /* end test */
+
 }
 
 .discovery .--open-card-container:hover .--open-card-text-container {
@@ -1128,3 +1140,16 @@ footer a {
 }
 
 /* test */
+
+/* for safari */
+
+div svg.--open-card-svg {
+  box-sizing: content-box;
+  width: 21px;
+  height: auto;
+  box-sizing: content-box;
+  width: 21px;
+  height: auto;
+  padding: 0.8rem;
+  aspect-ratio: 1/1;
+}
