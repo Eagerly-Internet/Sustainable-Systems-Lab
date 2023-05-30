@@ -498,7 +498,7 @@ main {
   font-family: var(--ff-heading-plex-serif-bold);
 }
 
-.discovery .discovery__link--blue {
+.discovery .discovery__--blue {
   background: linear-gradient(
       290.91deg,
       rgba(0, 0, 0, 0.3) 8.1%,
@@ -507,7 +507,7 @@ main {
     var(--clr-blue-400-primary);
 }
 
-.discovery .discovery__link--black {
+.discovery .discovery__--black {
   background: linear-gradient(
       310.91deg,
       rgba(0, 0, 0, 0.6) 8.1%,
@@ -526,11 +526,11 @@ main {
   background: var(--clr-white-primary);
 }
 
-.discovery .discovery__link--blue:hover .discovery__img svg path {
+.discovery .discovery__--blue:hover .discovery__img svg path {
   fill: var(--clr-blue-400-primary);
 }
 
-.discovery .discovery__link--black:hover .discovery__img svg path {
+.discovery .discovery__--black:hover .discovery__img svg path {
   fill: var(--clr-black-primary);
 }
 
