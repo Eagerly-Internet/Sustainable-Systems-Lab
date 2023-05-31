@@ -13,15 +13,14 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
-	<!--
+  <!--
 	File: service.html
 	Purpose: List of recent academic services
 	-->
 
-
   <body>
     <header>
-      <!-- Mobile Menu Toggle -->
+      <!-- Mobile menu toggle: when the checkbox is checked the mobile menu opens -->
       <input class="navigation-mobile-btn" id="ham-menu" type="checkbox" />
 
       <!-- Logo -->
@@ -29,7 +28,7 @@
         <img src="./images/przemyslaw-pawelcszak-s.png" alt="" />
       </a>
 
-      <!-- Navigation Menu -->
+      <!-- Navigation menu -->
       <!-- Don't forget to add the active class to your current page  -->
       <nav class="navigation">
         <ul class="navigation__list">
@@ -59,6 +58,7 @@
             <a class="navigation__item-link" href="./service.html">Service</a>
           </li>
         </ul>
+
         <!-- Socials inside the mobile menu -->
         <div class="socials-container">
           <!-- empty link -->
@@ -128,7 +128,7 @@
         </div>
       </nav>
 
-      <!-- Mobile Menu Label -->
+      <!-- Mobile Menu Label: The label makes the svg clickeble -->
       <label for="ham-menu" class="ham-menu">
         <!-- Mobile Menu Icon -->
         <svg
@@ -163,6 +163,7 @@
         </svg>
       </label>
     </header>
+
     <main>
       <!-- Intro section -->
 
@@ -182,6 +183,7 @@
       <section class="students-section">
         <h2 class="fullwidth-section-title">Current PhD students</h2>
 
+			<!-- Start student card component -->
         <div class="student-cards">
           <div class="student-cards__container">
             <div class="student-cards__img">
@@ -195,7 +197,9 @@
               <p class="student-cards__date subheading"><em>2019 – Now</em></p>
             </div>
           </div>
+			 <!-- End student card component -->
 
+			<!-- Start student card component -->
           <div class="student-cards__container">
             <div class="student-cards__img test">
               <img class="" src="./images/jasper-de-winkel.png" alt="" />
@@ -208,7 +212,9 @@
               <p class="student-cards__date subheading"><em>2019 – Now</em></p>
             </div>
           </div>
+			 <!-- End student card component -->
 
+			<!-- Start student card component -->
           <div class="student-cards__container">
             <div class="student-cards__img test">
               <img class="" src="./images/carlo-delle-donne.png" alt="" />
@@ -221,7 +227,9 @@
               <p class="student-cards__date subheading"><em>2019 – Now</em></p>
             </div>
           </div>
+			 <!-- End student card component -->
 
+			<!-- Start student card component -->
           <div class="student-cards__container">
             <div class="student-cards__img test">
               <img class="" src="./images/student-4.png" alt="" />
@@ -234,7 +242,8 @@
               <p class="student-cards__date subheading"><em>2019 – Now</em></p>
             </div>
           </div>
-        </div>
+			 <!-- End student card component -->
+
       </section>
 
       <!-- Students overview -->
@@ -242,6 +251,8 @@
         <h2 class="fullwidth-section-title">Current PhD students</h2>
 
         <div class="student-cards">
+
+			<!-- Start student card component -->
           <div class="student-cards__container">
             <img
               class="student-cards__img"
@@ -256,7 +267,9 @@
               <p class="student-cards__date subheading"><em>2013 – 2021</em></p>
             </div>
           </div>
+			 <!-- End student card component -->
 
+			<!-- Start student card component -->
           <div class="student-cards__container">
             <img
               class="student-cards__img"
@@ -271,7 +284,9 @@
               <p class="student-cards__date subheading"><em>2013 – 2021</em></p>
             </div>
           </div>
+			 <!-- End student card component -->
 
+			<!-- Start student card component -->
           <div class="student-cards__container">
             <img
               class="student-cards__img"
@@ -286,17 +301,23 @@
               <p class="student-cards__date subheading"><em>2013 – 2021</em></p>
             </div>
           </div>
+			 <!-- End student card component -->
+
         </div>
+
       </section>
     </main>
     <footer>
+		<!-- footer content -->
       <p>
         Website source:
         <a href="przemyslaw-pawelczak.github.io"
-          ><nobr>przemyslaw-pawelczak.github.io</nobr></a
+          >przemyslaw-pawelczak.github.io</a
         >
         Last update: February 10, 2023, 22:52 Delft Time
       </p>
+
+		<!-- socials -->
       <div class="socials-container">
         <!-- empty link -->
         <a class="socials-container__item" href="#"
@@ -363,6 +384,7 @@
           </svg>
         </a>
       </div>
+
     </footer>
   </body>
 </html>

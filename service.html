@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	    <!-- * * * * * * * * * * * * * * * *
+    <!-- * * * * * * * * * * * * * * * *
 	  *  Website ontwikkeld door Eagerly  *
 	  *     Telefoon:  030 - 785 3179     *
 	  *     Website:   www.eagerly.nl     *
@@ -13,28 +13,22 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
-	<!--
+  <!--
 	File: service.html
 	Purpose: List of recent academic services
 	-->
 
   <body>
     <header>
+      <!-- Mobile menu toggle: when the checkbox is checked the mobile menu opens -->
+      <input class="navigation-mobile-btn" id="ham-menu" type="checkbox" />
 
-      <!-- Mobile Menu Toggle -->
-      <input
-        class="navigation-mobile-btn"
-
-        id="ham-menu"
-        type="checkbox"
-      />
-
-		      <!-- Logo -->
+      <!-- Logo -->
       <a href="./index.html" class="img-placeholder">
         <img src="./images/przemyslaw-pawelcszak-s.png" alt="" />
       </a>
 
-      <!-- Navigation Menu -->
+      <!-- Navigation menu -->
       <!-- Don't forget to add the active class to your current page  -->
       <nav class="navigation">
         <ul class="navigation__list">
@@ -64,7 +58,8 @@
             >
           </li>
         </ul>
-		  <!-- Socials inside the mobile menu -->
+
+        <!-- Socials inside the mobile menu -->
         <div class="socials-container">
           <!-- empty link -->
           <a class="socials-container__item" href="#"
@@ -133,7 +128,7 @@
         </div>
       </nav>
 
-      <!-- Mobile Menu Label -->
+      <!-- Mobile Menu Label: The label makes the svg clickeble -->
       <label for="ham-menu" class="ham-menu">
         <!-- Mobile Menu Icon -->
         <svg
@@ -168,7 +163,6 @@
         </svg>
       </label>
     </header>
-
     <!-- Main content of the page -->
     <main>
       <!-- Section wrapper for the intro -->
@@ -187,7 +181,7 @@
       <section class="cards-overview">
         <!-- Card components -->
 
-        <!-- Card wrapper -->
+        <!-- Start card component -->
         <article class="article-card">
           <!-- Card text -->
           <div class="article-card__text-container">
@@ -197,7 +191,7 @@
               ACM SenSys 2022
             </h2>
             <p class="article-card__proc subheading">
-					<!-- empty link -->
+              <!-- empty link -->
               <em>Proc. <a href="#">ACM SenSys 2022</a></em>
             </p>
             <p class="article-card__meta-data">
@@ -223,6 +217,70 @@
               </svg>
               Publication</a
             >
+            <a class="btn btn--secondary btn--padding-s" href=""
+              ><svg
+                width="25"
+                height="21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22.299.97H1.939a.97.97 0 0 0-.97.969v16.482c0 .535.435.97.97.97H22.3a.97.97 0 0 0 .97-.97V1.939a.97.97 0 0 0-.97-.97zM1.939 0C.87 0 0 .868 0 1.939v16.482c0 1.07.868 1.939 1.939 1.939H22.3c1.071 0 1.94-.868 1.94-1.939V1.939C24.238.87 23.37 0 22.298 0H1.939z"
+                  fill="#000"
+                />
+                <path
+                  d="M2.909 8.726a.97.97 0 0 1 .97-.97h3.877a.97.97 0 0 1 .97.97v7.756a.97.97 0 0 1-.97.97H3.878a.97.97 0 0 1-.97-.97V8.726z"
+                  fill="#000"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.756 8.726H3.878v7.756h3.878V8.726zm-3.878-.97a.97.97 0 0 0-.97.97v7.756c0 .535.435.97.97.97h3.878a.97.97 0 0 0 .97-.97V8.726a.97.97 0 0 0-.97-.97H3.878z"
+                  fill="#000"
+                />
+                <path
+                  d="M10.665 8.726a.97.97 0 0 1 .97-.97h8.725a.97.97 0 1 1 0 1.94h-8.726a.97.97 0 0 1-.97-.97z"
+                  fill="#000"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.634 7.756a.97.97 0 1 0 0 1.94h8.726a.97.97 0 1 0 0-1.94h-8.726z"
+                  fill="#000"
+                />
+                <path
+                  d="M10.665 12.604a.97.97 0 0 1 .97-.97h8.725a.97.97 0 1 1 0 1.94h-8.726a.97.97 0 0 1-.97-.97z"
+                  fill="#000"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.634 11.634a.97.97 0 1 0 0 1.94h8.726a.97.97 0 1 0 0-1.94h-8.726z"
+                  fill="#000"
+                />
+                <path
+                  d="M10.665 16.482a.97.97 0 0 1 .97-.97h8.725a.97.97 0 1 1 0 1.94h-8.726a.97.97 0 0 1-.97-.97z"
+                  fill="#000"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.634 15.512a.97.97 0 1 0 0 1.94h8.726a.97.97 0 1 0 0-1.94h-8.726zM1.939 0C.869 0 0 .868 0 1.939v3.878h24.238V1.94C24.238.869 23.37 0 22.3 0H1.939zm.97 3.878a.97.97 0 1 0 0-1.939.97.97 0 0 0 0 1.94zm3.878-.97a.97.97 0 1 1-1.94 0 .97.97 0 0 1 1.94 0zm1.939.97a.97.97 0 1 0 0-1.939.97.97 0 0 0 0 1.94z"
+                  fill="#000"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.939.97a.97.97 0 0 0-.97.969v2.909h22.3V1.939a.97.97 0 0 0-.97-.97H8.735a1.94 1.94 0 1 1-1.464 3.222 1.934 1.934 0 0 1-1.454.657c-.579 0-1.099-.254-1.454-.657A1.939 1.939 0 1 1 2.899.97h-.96zm.979 0a1.934 1.934 0 0 1 1.445.656c.353-.4.87-.654 1.445-.656h-2.89zm2.908 0a1.934 1.934 0 0 1 1.445.656c.354-.4.87-.654 1.445-.656h-2.89zm-.978 1.932V2.915a.97.97 0 1 0 0-.013zm-.97 0a.97.97 0 1 0 0 .013V2.902zM0 1.939C0 .869.868 0 1.939 0H22.3c1.071 0 1.94.868 1.94 1.939v3.878H0V1.94zm9.695.97a.97.97 0 1 1-1.939 0 .97.97 0 0 1 1.94 0z"
+                  fill="#000"
+                />
+              </svg>
+              Source code <br />
+              <span> With links to source code</span>
+            </a>
+
             <a class="btn btn--secondary" href=""
               ><svg
                 width="25"
@@ -283,11 +341,13 @@
                   fill="#000"
                 />
               </svg>
-              Source code
-            </a>
+              Source code</a
+            >
           </div>
         </article>
+        <!-- End card component -->
 
+        <!-- Start card component -->
         <article class="article-card">
           <!-- Card text -->
           <div class="article-card__text-container">
@@ -297,7 +357,7 @@
               ACM SenSys 2022
             </h2>
             <p class="article-card__proc subheading">
-					<!-- empty link -->
+              <!-- empty link -->
               <em>Proc. <a href="#">ACM SenSys 2022</a></em>
             </p>
             <p class="article-card__meta-data">
@@ -440,8 +500,9 @@
                 <path
                   d="M16.58 10.071a.5.5 0 0 1 0 .858l-5.734 3.44a.5.5 0 0 1-.758-.429V7.06a.5.5 0 0 1 .758-.43l5.733 3.441z"
                   fill="#000"
-                /></svg>
-					 Source code</a
+                />
+              </svg>
+              Source code</a
             >
           </div>
 
@@ -449,56 +510,60 @@
           <ul class="article-card__link-list">
             <li class="article-card__list-item font-bold">Media coverage:</li>
             <li class="article-card__list-item">
-					<!-- empty link -->
+              <!-- empty link -->
               <a href="#" class="article-card__list-link">Gizmodo, </a>
             </li>
             <li class="article-card__list-item">
-					<!-- empty link -->
+              <!-- empty link -->
               <a href="#" class="article-card__list-link">Engadget,</a>
             </li>
             <li class="article-card__list-item">
-					<!-- empty link -->
+              <!-- empty link -->
               <a href="#" class="article-card__list-link">PCMag, </a>
             </li>
             <li class="article-card__list-item">
-					<!-- empty link -->
+              <!-- empty link -->
               <a href="#" class="article-card__list-link">The Register, </a>
             </li>
             <li class="article-card__list-item">
-					<!-- empty link -->
+              <!-- empty link -->
               <a href="#" class="article-card__list-link">Tech Times, </a>
             </li>
             <li class="article-card__list-item">
-					<!-- empty link -->
+              <!-- empty link -->
               <a href="#" class="article-card__list-link">Nintendo Life, </a>
             </li>
             <li class="article-card__list-item">
-					<!-- empty link -->
+              <!-- empty link -->
               <a href="#" class="article-card__list-link">Daily Mail, </a>
             </li>
             <li class="article-card__list-item">
-					<!-- empty link -->
+              <!-- empty link -->
               <a href="#" class="article-card__list-link">The Independent,</a>
             </li>
             <li class="article-card__list-item">
-					<!-- empty link -->
+              <!-- empty link -->
               <a href="#" class="article-card__list-link"> r/gadgets</a>
             </li>
           </ul>
         </article>
+        <!-- End card component -->
       </section>
     </main>
 
     <footer>
+		<!-- footer content -->
       <p>
         Website source:
         <a href="przemyslaw-pawelczak.github.io"
-          ><nobr>przemyslaw-pawelczak.github.io</nobr></a
+          >przemyslaw-pawelczak.github.io</a
         >
         Last update: February 10, 2023, 22:52 Delft Time
       </p>
+
+		<!-- socials -->
       <div class="socials-container">
-			<!-- empty link -->
+        <!-- empty link -->
         <a class="socials-container__item" href="#"
           ><svg
             width="22"
@@ -514,7 +579,7 @@
             />
           </svg>
         </a>
-		  <!-- empty link -->
+        <!-- empty link -->
         <a class="socials-container__item" href="#"
           ><svg
             width="21"
@@ -528,7 +593,7 @@
             />
           </svg>
         </a>
-		  <!-- empty link -->
+        <!-- empty link -->
         <a class="socials-container__item" href="#"
           ><svg
             width="20"
@@ -542,7 +607,7 @@
             />
           </svg>
         </a>
-		  <!-- empty link -->
+        <!-- empty link -->
         <a class="socials-container__item" href="#"
           ><svg
             width="23"
@@ -563,6 +628,7 @@
           </svg>
         </a>
       </div>
+
     </footer>
   </body>
 </html>

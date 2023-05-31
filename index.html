@@ -13,21 +13,22 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
-	<!--
+  <!--
 	File: index.html
 	Purpose: Homepage website introduction
 	-->
 
   <body>
     <header>
-      <!-- Mobile Menu Toggle
-		This checkbox is used to toggle the mobile menu on and off -->
+      <!-- Mobile menu toggle: when the checkbox is checked the mobile menu opens -->
       <input class="navigation-mobile-btn" id="ham-menu" type="checkbox" />
 
       <!-- Logo -->
-      <a href="./index.html" class="img-placeholder"> </a>
+      <a href="./index.html" class="img-placeholder">
+        <img src="./images/przemyslaw-pawelcszak-s.png" alt="" />
+      </a>
 
-      <!-- Navigation Menu -->
+      <!-- Navigation menu -->
       <!-- Don't forget to add the active class to your current page  -->
       <nav class="navigation">
         <ul class="navigation__list">
@@ -125,10 +126,9 @@
         </div>
       </nav>
 
-      <!-- Mobile Menu Label -->
+      <!-- Mobile Menu Label: The label makes the svg clickeble -->
       <label for="ham-menu" class="ham-menu">
         <!-- Mobile Menu Icon -->
-
         <svg
           class="navigation-burger-menu"
           width="48"
@@ -162,13 +162,19 @@
       </label>
     </header>
 
+    <!-- Main content of the page -->
     <main>
+      <!-- Main content -->
+
       <section class="hero">
+        <!-- Hero image -->
         <img
           class="hero__img"
           src="./images/przemyslaw-pawelcszak-l.png"
           alt="Przemyslaw Pawelcszak"
         />
+
+        <!-- Hero content -->
         <div class="hero__content-container">
           <div class="hero__img-caption">
             <h1 class="hero__header">Przemysław Pawełczak</h1>
@@ -183,6 +189,7 @@
             Sustainable Systems Lab.
           </p>
 
+          <!-- link list -->
           <div class="hero__link-container">
             <div class="socials-container">
               <!-- empty link -->
@@ -250,6 +257,8 @@
                 </svg>
               </a>
             </div>
+
+            <!-- Contact information -->
             <!-- empty link -->
             <a class="btn" href="mailto:p.pawelczak@tudelft.nl"
               ><svg
@@ -283,7 +292,11 @@
           </div>
         </div>
       </section>
+
+      <!-- paper component -->
       <section class="intro paper">
+        <!-- Feel free to use any h1 h2 p li like elements in this section -->
+        <!-- You can reuse this section in any body as an intro or static text -->
         <p>
           My research vision is to make Internet of Things free from batteries,
           less polluting and sustainable. With my students I do research that is
@@ -313,9 +326,11 @@
         </p>
       </section>
 
+      <!-- Information section -->
       <section class="discovery">
-
-        <a href="" class="discovery__link discovery__--blue">
+        <!-- Discovery blue link variant -->
+        <!-- Empty link -->
+        <a href="#" class="discovery__link discovery__--blue">
           <span class="discovery__subtitle"><em> Version: 14-11-22</em></span>
           <span class="discovery__title">Curriculum Vitae</span>
           <span class="discovery__img"
@@ -336,19 +351,23 @@
           </span>
         </a>
 
+        <!-- Discovery card animation -->
         <div
           href=""
           class="discovery__open-card discovery__--black discovery__link--animation --open-card-container"
         >
+          <!-- card view 1-->
           <span class="discovery__title">Embedded Systems Group TU Delft</span>
 
+          <!-- card view 2 -->
           <span class="discovery__img --open-card-animation">
             <div class="--open-card-text-container">
               <h2 class="">Eagerly</h2>
               <span>Minrebroederstraat 5</span>
               <span>3512 GS Utrecht</span>
             </div>
-            <svg class="--open-card-svg"
+            <svg
+              class="--open-card-svg"
               width="15"
               height="20"
               viewBox="0 0 15 20"
@@ -362,10 +381,11 @@
             </svg>
           </span>
         </div>
-
       </section>
     </main>
+
     <footer>
+		<!-- footer content -->
       <p>
         Website source:
         <a href="przemyslaw-pawelczak.github.io"
@@ -373,6 +393,8 @@
         >
         Last update: February 10, 2023, 22:52 Delft Time
       </p>
+
+		<!-- socials -->
       <div class="socials-container">
         <!-- empty link -->
         <a class="socials-container__item" href="#"
@@ -439,6 +461,7 @@
           </svg>
         </a>
       </div>
+
     </footer>
   </body>
 </html>
