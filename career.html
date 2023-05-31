@@ -19,8 +19,9 @@
 	-->
 
   <body>
+
     <header>
-      <!-- Mobile Menu Toggle -->
+      <!-- Mobile menu toggle: when the checkbox is checked the mobile menu opens -->
       <input class="navigation-mobile-btn" id="ham-menu" type="checkbox" />
 
       <!-- Logo -->
@@ -28,9 +29,10 @@
         <img src="./images/przemyslaw-pawelcszak-s.png" alt="" />
       </a>
 
-      <!-- Navigation Menu -->
+      <!-- Navigation menu -->
       <!-- Don't forget to add the active class to your current page  -->
       <nav class="navigation">
+
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__item-link" href="./index.html">Home</a>
@@ -50,14 +52,18 @@
             <a class="navigation__item-link" href="./teaching.html">Teaching</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__item-link active" href="./career.html">Career</a>
+            <a class="navigation__item-link active" href="./career.html"
+              >Career</a
+            >
           </li>
           <li class="navigation__item">
             <a class="navigation__item-link" href="./service.html">Service</a>
           </li>
         </ul>
+
         <!-- Socials inside the mobile menu -->
         <div class="socials-container">
+
           <!-- empty link -->
           <a class="socials-container__item" href="#"
             ><svg
@@ -122,10 +128,12 @@
               />
             </svg>
           </a>
+
         </div>
+
       </nav>
 
-      <!-- Mobile Menu Label -->
+      <!-- Mobile Menu Label: The label makes the svg clickeble -->
       <label for="ham-menu" class="ham-menu">
         <!-- Mobile Menu Icon -->
         <svg
@@ -163,6 +171,7 @@
 
     <!-- Main content of the page -->
     <main>
+
       <!-- Section wrapper for the intro -->
       <section class="hero-intro">
         <div class="hero-intro__text-container">
@@ -176,7 +185,7 @@
 
         <!-- Card components -->
 
-        <!-- Card wrapper -->
+        <!-- Start card component -->
         <article class="article-card">
           <!-- Card text -->
           <div class="article-card__text-container">
@@ -231,12 +240,14 @@
             >
           </div>
         </article>
+		  <!-- End card component -->
 
+		  <!-- Start card component -->
         <article class="article-card">
           <!-- Card text -->
           <div class="article-card__text-container">
             <h2 class="article-card__title">
-              Fraunhofer Heinrich Hertz Institute, Germany
+               Fraunhofer Heinrich Hertz Institute, Germany
             </h2>
             <p class="article-card__proc subheading"><em>2011–2013</em></p>
             <p class="article-card__meta-data">Research Scientist</p>
@@ -265,7 +276,7 @@
             >
           </div>
 
-          <!-- List of hyperlinks -->
+			           <!-- List of hyperlinks -->
           <ul class="article-card__link-list">
             <li class="article-card__list-item font-bold">Supervisor:</li>
             <li class="article-card__list-item">
@@ -273,7 +284,10 @@
               <a href="#" class="article-card__list-link">Koen Langendoen</a>
             </li>
           </ul>
+
         </article>
+		  <!-- End card component -->
+
       </section>
     </main>
 
@@ -288,6 +302,7 @@
       </p>
       <!-- Reusable socials container -->
       <div class="socials-container">
+
         <!-- empty link -->
         <a class="socials-container__item" href="#"
           ><svg
@@ -352,7 +367,11 @@
             />
           </svg>
         </a>
+
       </div>
+
     </footer>
+
   </body>
+
 </html>
