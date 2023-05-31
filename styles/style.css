@@ -170,7 +170,7 @@ p {
   border-radius: 6.5rem;
   font-size: var(--fz-body-small);
   font-weight: 700;
-  font-family: var(--ff-body-inter);
+  font-family: var(--ff-body-inter-bold);
   transition: color ease 0.3s, background ease 0.3s;
   line-break: anywhere;
   background: var(--clr-blue-400-primary);
@@ -640,9 +640,6 @@ span.--open-card-animation svg {
   border-radius: 7rem;
   border: 2px solid #000;
   /* Test */
-    box-sizing: content-box;
-  width: 21px;
-  height: auto;
   box-sizing: content-box;
   width: 21px;
   height: auto;
@@ -952,7 +949,6 @@ footer a {
   .btn {
     width: fit-content;
     width: -webkit-fit-content; /* Safari */
-    font-family: var(--ff-body-inter-bold);
   }
 
   /* Discovery small */
