@@ -310,6 +310,14 @@ header img {
   margin-bottom: 3rem;
   overflow: scroll;
   max-height: 100%;
+  padding: 1rem 0;
+  /* Hides scroll bar */
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.navigation .navigation__list::-webkit-scrollbar {
+    display: none;
 }
 
 .navigation .navigation__item {
@@ -444,8 +452,7 @@ main {
   border: 2px var(--clr-blue-400-primary) solid;
   padding: 0.8rem;
   border-radius: 7rem;
-
-  transition: var(--transition-03s);
+  transition: background ease .3s, fill ease .3s, border-color ease .3s;
 }
 
 .socials-container .socials-container__item path {
@@ -1072,6 +1079,7 @@ footer a {
     flex-direction: row;
     padding: 1.25rem 0rem;
     margin-bottom: 0;
+	 overflow: hidden;
   }
 
   .navigation .navigation__item {
