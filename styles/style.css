@@ -624,6 +624,12 @@ span.discovery__img.--open-card-animation {
 
 .discovery .--open-card-container:hover .--open-card-text-container li a {
   border-bottom: var(--clr-blue-400-primary) 1px solid;
+  transition: var(--transition-03s);
+}
+
+.discovery .--open-card-container:hover .--open-card-text-container li a:hover {
+	  color: var(--clr-blue-500);
+  border-bottom: var(--clr-blue-500) 1px solid;
 }
 
 .discovery .--open-card-container:hover svg path {
