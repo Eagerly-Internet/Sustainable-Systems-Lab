@@ -563,6 +563,8 @@ main {
   right: 1rem;
   overflow: hidden;
   height: 3rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -665,13 +667,11 @@ span.--open-card-animation svg {
   background-color: black;
   border-radius: 7rem;
   border: 2px solid var(--clr-black-primary);
-  /* Test */
   box-sizing: content-box;
   width: 21px;
   height: auto;
   padding: 0.8rem;
   aspect-ratio: 1/1;
-  /* end test */
 }
 
 .discovery .--open-card-container:hover .--open-card-text-container {
@@ -690,6 +690,21 @@ span.--open-card-animation svg {
   display: grid;
   flex-direction: column;
 }
+
+
+/* for safari */
+
+div svg.--open-card-svg {
+  box-sizing: content-box;
+  width: 21px;
+  height: auto;
+  box-sizing: content-box;
+  width: 21px;
+  height: auto;
+  padding: 0.8rem;
+  aspect-ratio: 1/1;
+}
+
 
 /* Cards-information */
 
@@ -814,6 +829,8 @@ span.--open-card-animation svg {
   right: 1rem;
   overflow: hidden;
   height: 3rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -914,7 +931,8 @@ span.--open-card-animation svg {
 }
 
 .student-cards .student-cards__img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1.25rem;
 }
 
@@ -961,6 +979,8 @@ footer a {
   gap: 1rem;
 }
 
+
+
 /* Media queries for responsive changes*/
 
 /* Responsive for-tablet-p-up */
@@ -981,12 +1001,14 @@ footer a {
 
   /* Buttons */
   .btn {
+    width: -moz-fit-content;
     width: fit-content;
     width: -webkit-fit-content; /* Safari */
   }
 
   /* Discovery small */
   .discovery.small .discovery__link {
+    width: -moz-fit-content;
     width: fit-content;
     width: -webkit-fit-content; /* Safari */
     min-width: 21.875rem;
@@ -1171,17 +1193,5 @@ footer a {
   }
 }
 
-/* test */
 
-/* for safari */
 
-div svg.--open-card-svg {
-  box-sizing: content-box;
-  width: 21px;
-  height: auto;
-  box-sizing: content-box;
-  width: 21px;
-  height: auto;
-  padding: 0.8rem;
-  aspect-ratio: 1/1;
-}
