@@ -3,7 +3,7 @@
 /* Font: ibm_plex_serif */
 @font-face {
   font-family: "ibm_plex_serif_bold";
-  src: url("/assets/fonts/ibm-plex-serif/ibmplexserif-bold-webfont.woff")
+  src: url("..//assets/fonts/ibm-plex-serif/ibmplexserif-bold-webfont.woff")
     format("woff");
   font-weight: bold;
   font-style: normal;
@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: "ibm_plex_serif_bold_italic";
-  src: url("/assets/fonts/ibm-plex-serif/ibmplexserif-bolditalic-webfont.woff")
+  src: url("..//assets/fonts/ibm-plex-serif/ibmplexserif-bolditalic-webfont.woff")
     format("woff");
   font-weight: bold;
   font-style: italic;
@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: "ibm_plex_serif_medium";
-  src: url("/assets/fonts/ibm-plex-serif/ibmplexserif-medium-webfont.woff")
+  src: url("..//assets/fonts/ibm-plex-serif/ibmplexserif-medium-webfont.woff")
     format("woff");
   font-weight: medium;
   font-style: normal;
@@ -27,7 +27,7 @@
 
 @font-face {
   font-family: "ibm_plex_serif_medium_italic";
-  src: url("/assets/fonts/ibm-plex-serif/ibmplexserif-mediumitalic-webfont.woff")
+  src: url("..//assets/fonts/ibm-plex-serif/ibmplexserif-mediumitalic-webfont.woff")
     format("woff");
   font-weight: medium;
   font-style: italic;
@@ -36,14 +36,14 @@
 /* Font: inter */
 @font-face {
   font-family: "inter";
-  src: url("/assets/fonts/inter/inter-regular-webfont.woff") format("woff");
+  src: url("..//assets/fonts/inter/inter-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "inter_bold";
-  src: url("/assets/fonts/inter/inter-bold-webfont.woff") format("woff");
+  src: url("..//assets/fonts/inter/inter-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
