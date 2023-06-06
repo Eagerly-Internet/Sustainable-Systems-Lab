@@ -618,6 +618,7 @@ span.discovery__img.--open-card-animation {
   display: block;
   font-family: var(--ff-heading-plex-serif-medium);
   font-weight: 400;
+  font-size: var(--fz-h3-mobile);
 }
 
 .discovery .--open-card-container:hover .--open-card-text-container li {
